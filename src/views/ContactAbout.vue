@@ -1,296 +1,318 @@
 <template>
   <div class="contact-about-page">
-    <div class="container">
-      <!-- Page Header -->
-      <header class="page-header">
-        <div class="header-icon">📧</div>
-        <h1>Contact Us & About Us</h1>
-        <p class="page-subtitle">Meet the team behind Wacky Warlords and get in touch</p>
-      </header>
+    <!-- Page Header - Full Width -->
+    <section class="page-header-section">
+      <div class="container">
+        <header class="page-header">
+          <div class="header-icon">📧</div>
+          <h1>Contact Us & About Us</h1>
+          <p class="page-subtitle">Meet the team behind Wacky Warlords and get in touch</p>
+        </header>
+      </div>
+    </section>
 
-      <!-- About Section -->
-      <section class="about-section">
-        <div class="about-content">
-          <h2>About Wacky Warlords Team</h2>
-          <div class="about-grid">
-            <div class="about-text">
-              <p>
-                We are a passionate indie game development team dedicated to creating
-                engaging and innovative gaming experiences. Founded in 2024, our mission
-                is to bring unique and entertaining games to players worldwide.
-              </p>
+    <!-- About Section - Full Width -->
+    <section class="about-section-wrapper">
+      <div class="container">
+        <div class="about-section">
+          <div class="about-content">
+            <h2>About Wacky Warlords Team</h2>
+            <div class="about-grid">
+              <div class="about-text">
+                <p>
+                  We are a passionate indie game development team dedicated to creating
+                  engaging and innovative gaming experiences. Founded in 2024, our mission
+                  is to bring unique and entertaining games to players worldwide.
+                </p>
 
-              <h3>Our Mission</h3>
-              <p>
-                To create games that bring joy, excitement, and memorable experiences
-                to players of all ages. We believe in community-driven development
-                and listen closely to our players' feedback.
-              </p>
+                <h3>Our Mission</h3>
+                <p>
+                  To create games that bring joy, excitement, and memorable experiences
+                  to players of all ages. We believe in community-driven development
+                  and listen closely to our players' feedback.
+                </p>
 
-              <h3>Our Values</h3>
-              <ul class="values-list">
-                <li><strong>Community First:</strong> Players are at the heart of everything we do</li>
-                <li><strong>Quality:</strong> We strive for excellence in every aspect of game development</li>
-                <li><strong>Innovation:</strong> We're not afraid to try new ideas and push boundaries</li>
-                <li><strong>Transparency:</strong> Open communication with our community</li>
-                <li><strong>Fun:</strong> Games should be enjoyable for both players and creators</li>
-              </ul>
-            </div>
-
-            <div class="team-photo">
-              <div class="placeholder-image">
-                <img src="https://place-hold.it/400x300/1a1a1a/4CAF50/png?text=Team+Photo" alt="Team Photo" />
-                <div class="placeholder-icon">📸</div>
-                <p>Team Photo Coming Soon</p>
+                <h3>Our Values</h3>
+                <ul class="values-list">
+                  <li><strong>Community First:</strong> Players are at the heart of everything we do</li>
+                  <li><strong>Quality:</strong> We strive for excellence in every aspect of game development</li>
+                  <li><strong>Innovation:</strong> We're not afraid to try new ideas and push boundaries</li>
+                  <li><strong>Transparency:</strong> Open communication with our community</li>
+                  <li><strong>Fun:</strong> Games should be enjoyable for both players and creators</li>
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Team Members Section -->
-      <section class="team-section">
-        <h2 class="section-title">Meet the Team</h2>
-        <div class="team-grid">
-          <div class="team-member">
-            <div class="member-photo">
-              <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=GD" alt="Game Director" />
-              <div class="placeholder-avatar">
-                <span>👨‍💻</span>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Game Director</h4>
-              <p class="member-role">Lead Developer & Game Designer</p>
-              <p class="member-bio">
-                Visionary behind Wacky Warlords with 10+ years in game development.
-                Passionate about creating strategic experiences that bring players together.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-photo">
-              <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AD" alt="Art Director" />
-              <div class="placeholder-avatar">
-                <span>🎨</span>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Art Director</h4>
-              <p class="member-role">Visual Design & Animation</p>
-              <p class="member-bio">
-                Creative force behind the visual identity of Wacky Warlords.
-                Specializes in bringing characters and worlds to life through stunning art.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-photo">
-              <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=TL" alt="Technical Lead" />
-              <div class="placeholder-avatar">
-                <span>🔧</span>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Technical Lead</h4>
-              <p class="member-role">Programming & Infrastructure</p>
-              <p class="member-bio">
-                Technical wizard ensuring smooth gameplay and robust systems.
-                Expert in real-time strategy mechanics and server architecture.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-photo">
-              <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AUD" alt="Audio Designer" />
-              <div class="placeholder-avatar">
-                <span>🎵</span>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Audio Designer</h4>
-              <p class="member-role">Sound Effects & Music</p>
-              <p class="member-bio">
-                Sound architect creating the epic audio landscape of battles.
-                Crafts immersive soundscapes that enhance every strategic moment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-grid">
-          <!-- Contact Methods -->
-          <div class="contact-methods">
-            <h3>Contact Methods</h3>
-
-            <div class="contact-item">
-              <div class="contact-icon">📧</div>
-              <div class="contact-details">
-                <h4>Email</h4>
-                <p>contact@wackywarlords.com</p>
-                <small>We respond within 24-48 hours</small>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">💬</div>
-              <div class="contact-details">
-                <h4>Discord Server</h4>
-                <p>Join our community</p>
-                <small>Real-time chat with players and developers</small>
-                <button class="btn btn-discord">Join Discord</button>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">🐦</div>
-              <div class="contact-details">
-                <h4>Social Media</h4>
-                <div class="social-links">
-                  <button class="social-btn twitter">Twitter</button>
-                  <button class="social-btn reddit">Reddit</button>
-                  <button class="social-btn youtube">YouTube</button>
+              <div class="team-photo">
+                <div class="placeholder-image">
+                  <img src="https://place-hold.it/400x300/1a1a1a/4CAF50/png?text=Team+Photo" alt="Team Photo" />
+                  <div class="placeholder-icon">📸</div>
+                  <p>Team Photo Coming Soon</p>
                 </div>
-                <small>Follow for updates and announcements</small>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">💼</div>
-              <div class="contact-details">
-                <h4>Business Inquiries</h4>
-                <p>business@wackywarlords.com</p>
-                <small>Press, partnerships, and collaborations</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form-container">
-            <h3>Send us a Message</h3>
-            <form class="contact-form" @submit.prevent="submitForm">
-              <div class="form-group">
-                <label for="name">Name *</label>
-                <input
-                    type="text"
-                    id="name"
-                    v-model="form.name"
-                    required
-                    placeholder="Your name"
-                >
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input
-                    type="email"
-                    id="email"
-                    v-model="form.email"
-                    required
-                    placeholder="your.email@example.com"
-                >
-              </div>
-
-              <div class="form-group">
-                <label for="subject">Subject *</label>
-                <select id="subject" v-model="form.subject" required>
-                  <option value="">Select a topic</option>
-                  <option value="general">General Question</option>
-                  <option value="bug">Bug Report</option>
-                  <option value="feedback">Feedback/Suggestion</option>
-                  <option value="support">Technical Support</option>
-                  <option value="business">Business Inquiry</option>
-                  <option value="press">Press/Media</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea
-                    id="message"
-                    v-model="form.message"
-                    required
-                    rows="5"
-                    placeholder="Tell us what's on your mind..."
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section class="faq-section">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
-            <div class="faq-question" @click="toggleFaq(index)">
-              <h4>{{ faq.question }}</h4>
-              <span class="faq-toggle">{{ faq.isOpen ? '−' : '+' }}</span>
-            </div>
-            <div class="faq-answer" v-show="faq.isOpen">
-              <p>{{ faq.answer }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Office/Studio Info -->
-      <section class="studio-info">
-        <h2 class="section-title">Studio Information</h2>
-        <div class="studio-grid">
-          <div class="studio-details">
-            <h3>Studio Location</h3>
-            <p>
-              <strong>Wacky Warlords Studio</strong><br>
-              Remote-first development team<br>
-              Building the future of strategy gaming from around the world
-            </p>
-
-            <h4>Working Hours</h4>
-            <p>
-              Monday - Friday: 9:00 AM - 6:00 PM (EST)<br>
-              Community support available 24/7 via Discord
-            </p>
-
-            <h4>Founded</h4>
-            <p>2024</p>
-
-            <h4>Team Size</h4>
-            <p>4-6 core developers + community contributors</p>
-
-            <h4>Languages Supported</h4>
-            <p>English, Spanish, French (community translations)</p>
-          </div>
-
-          <div class="studio-map">
-            <div class="placeholder-map">
-              <img src="https://place-hold.it/350x250/1a1a1a/4CAF50/png?text=Global+Team" alt="Global Remote Team" />
-              <div class="map-icon">🌍</div>
-              <p><strong>Global Remote Team</strong></p>
-              <p>Developers from around the world</p>
-              <div class="location-dots">
-                <span class="dot">🇺🇸</span>
-                <span class="dot">🇪🇸</span>
-                <span class="dot">🇫🇷</span>
-                <span class="dot">🇩🇪</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Team Members Section - Full Width -->
+    <section class="team-section-wrapper">
+      <div class="container">
+        <div class="team-section">
+          <h2 class="section-title">Meet the Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=GD" alt="Game Director" />
+                <div class="placeholder-avatar">
+                  <span>👨‍💻</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Game Director</h4>
+                <p class="member-role">Lead Developer & Game Designer</p>
+                <p class="member-bio">
+                  Visionary behind Wacky Warlords with 10+ years in game development.
+                  Passionate about creating strategic experiences that bring players together.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AD" alt="Art Director" />
+                <div class="placeholder-avatar">
+                  <span>🎨</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Art Director</h4>
+                <p class="member-role">Visual Design & Animation</p>
+                <p class="member-bio">
+                  Creative force behind the visual identity of Wacky Warlords.
+                  Specializes in bringing characters and worlds to life through stunning art.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=TL" alt="Technical Lead" />
+                <div class="placeholder-avatar">
+                  <span>🔧</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Technical Lead</h4>
+                <p class="member-role">Programming & Infrastructure</p>
+                <p class="member-bio">
+                  Technical wizard ensuring smooth gameplay and robust systems.
+                  Expert in real-time strategy mechanics and server architecture.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AUD" alt="Audio Designer" />
+                <div class="placeholder-avatar">
+                  <span>🎵</span>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Audio Designer</h4>
+                <p class="member-role">Sound Effects & Music</p>
+                <p class="member-bio">
+                  Sound architect creating the epic audio landscape of battles.
+                  Crafts immersive soundscapes that enhance every strategic moment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Full Width -->
+    <section class="contact-section-wrapper">
+      <div class="container">
+        <div class="contact-section">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-grid">
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+              <h3>Contact Methods</h3>
+
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>contact@wackywarlords.com</p>
+                  <small>We respond within 24-48 hours</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">💬</div>
+                <div class="contact-details">
+                  <h4>Discord Server</h4>
+                  <p>Join our community</p>
+                  <small>Real-time chat with players and developers</small>
+                  <button class="btn btn-discord">Join Discord</button>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">🐦</div>
+                <div class="contact-details">
+                  <h4>Social Media</h4>
+                  <div class="social-links">
+                    <button class="social-btn twitter">Twitter</button>
+                    <button class="social-btn reddit">Reddit</button>
+                    <button class="social-btn youtube">YouTube</button>
+                  </div>
+                  <small>Follow for updates and announcements</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                  <h4>Business Inquiries</h4>
+                  <p>business@wackywarlords.com</p>
+                  <small>Press, partnerships, and collaborations</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+              <h3>Send us a Message</h3>
+              <form class="contact-form" @submit.prevent="submitForm">
+                <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input
+                      type="text"
+                      id="name"
+                      v-model="form.name"
+                      required
+                      placeholder="Your name"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                      type="email"
+                      id="email"
+                      v-model="form.email"
+                      required
+                      placeholder="your.email@example.com"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" v-model="form.subject" required>
+                    <option value="">Select a topic</option>
+                    <option value="general">General Question</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feedback">Feedback/Suggestion</option>
+                    <option value="support">Technical Support</option>
+                    <option value="business">Business Inquiry</option>
+                    <option value="press">Press/Media</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                      id="message"
+                      v-model="form.message"
+                      required
+                      rows="5"
+                      placeholder="Tell us what's on your mind..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
+                  {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section - Full Width -->
+    <section class="faq-section-wrapper">
+      <div class="container">
+        <div class="faq-section">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
+              <div class="faq-question" @click="toggleFaq(index)">
+                <h4>{{ faq.question }}</h4>
+                <span class="faq-toggle">{{ faq.isOpen ? '−' : '+' }}</span>
+              </div>
+              <div class="faq-answer" v-show="faq.isOpen">
+                <p>{{ faq.answer }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office/Studio Info - Full Width -->
+    <section class="studio-info-wrapper">
+      <div class="container">
+        <div class="studio-info">
+          <h2 class="section-title">Studio Information</h2>
+          <div class="studio-grid">
+            <div class="studio-details">
+              <h3>Studio Location</h3>
+              <p>
+                <strong>Wacky Warlords Studio</strong><br>
+                Remote-first development team<br>
+                Building the future of strategy gaming from around the world
+              </p>
+
+              <h4>Working Hours</h4>
+              <p>
+                Monday - Friday: 9:00 AM - 6:00 PM (EST)<br>
+                Community support available 24/7 via Discord
+              </p>
+
+              <h4>Founded</h4>
+              <p>2024</p>
+
+              <h4>Team Size</h4>
+              <p>4-6 core developers + community contributors</p>
+
+              <h4>Languages Supported</h4>
+              <p>English, Spanish, French (community translations)</p>
+            </div>
+
+            <div class="studio-map">
+              <div class="placeholder-map">
+                <img src="https://place-hold.it/350x250/1a1a1a/4CAF50/png?text=Global+Team" alt="Global Remote Team" />
+                <div class="map-icon">🌍</div>
+                <p><strong>Global Remote Team</strong></p>
+                <p>Developers from around the world</p>
+                <div class="location-dots">
+                  <span class="dot">🇺🇸</span>
+                  <span class="dot">🇪🇸</span>
+                  <span class="dot">🇫🇷</span>
+                  <span class="dot">🇩🇪</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

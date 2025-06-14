@@ -303,7 +303,6 @@
     </section>
   </div>
 </template>
-
 <script setup>
 // Lore page logic
 </script>

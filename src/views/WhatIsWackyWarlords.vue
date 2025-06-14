@@ -1,290 +1,288 @@
 <template>
   <div class="what-is-page">
-    <div class="container">
-      <!-- Hero Section - Full Width -->
-      <section class="hero-section">
-        <div class="hero-container">
-          <div class="hero-icon">🏰</div>
-          <h1 class="hero-title">What Is Wacky Warlords?</h1>
-          <p class="hero-subtitle">⚔️ A Battle Across Time and Death</p>
-          <p class="hero-description">
-            Wacky Warlords is a fast-paced, real-time strategy game where the world's most legendary warriors—revived by Death itself—clash in chaotic skirmishes for a chance to return to life.
-          </p>
-          <div class="hero-tags">
-            <span class="tag">Strategy</span>
-            <span class="tag">Madness</span>
-            <span class="tag">War with a twist</span>
-          </div>
-          <div class="hero-actions">
-            <router-link to="/lore" class="btn btn-primary">
-              <span class="btn-icon">🎮</span>
-              Play Now
-            </router-link>
-            <router-link to="/lore" class="btn btn-secondary">
-              <span class="btn-icon">📖</span>
-              Discover Lore
-            </router-link>
-          </div>
+    <!-- Hero Section - Full Width -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-icon">🏰</div>
+        <h1 class="hero-title">What Is Wacky Warlords?</h1>
+        <p class="hero-subtitle">⚔️ A Battle Across Time and Death</p>
+        <p class="hero-description">
+          Wacky Warlords is a fast-paced, real-time strategy game where the world's most legendary warriors—revived by Death itself—clash in chaotic skirmishes for a chance to return to life.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Strategy</span>
+          <span class="tag">Madness</span>
+          <span class="tag">War with a twist</span>
         </div>
-      </section>
+        <div class="hero-actions">
+          <router-link to="/lore" class="btn btn-primary">
+            <span class="btn-icon">🎮</span>
+            Play Now
+          </router-link>
+          <router-link to="/lore" class="btn btn-secondary">
+            <span class="btn-icon">📖</span>
+            Discover Lore
+          </router-link>
+        </div>
+      </div>
+    </section>
 
-      <!-- Game Loop Section - Full Width -->
-      <section class="section game-loop-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-icon">🎮</div>
-            <h2>The Game Loop: Strategy Meets Speed</h2>
-            <p class="section-description">
-              In Wacky Warlords, players command squads of units chosen before battle. Matches play out in real time,
-              with tug-of-war mechanics that turn every second into a high-stakes decision.
-            </p>
-          </div>
-
-          <div class="game-flow">
-            <div class="flow-step">
-              <div class="step-number">1</div>
-              <h3>Deploy your army from your base</h3>
-              <p>Choose your formation and timing carefully</p>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <div class="step-number">2</div>
-              <h3>Push your forces across narrow lanes</h3>
-              <p>Control the battlefield momentum</p>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-step">
-              <div class="step-number">3</div>
-              <h3>Shatter your opponent's stronghold</h3>
-              <p>Before they crush yours</p>
-            </div>
-          </div>
-
-          <p class="flow-conclusion">
-            The battlefield is always in motion, and the line between victory and defeat shifts with every decision.
+    <!-- Game Loop Section - Full Width -->
+    <section class="section game-loop-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🎮</div>
+          <h2>The Game Loop: Strategy Meets Speed</h2>
+          <p class="section-description">
+            In Wacky Warlords, players command squads of units chosen before battle. Matches play out in real time,
+            with tug-of-war mechanics that turn every second into a high-stakes decision.
           </p>
         </div>
-      </section>
 
-      <!-- Strategy Section - Full Width -->
-      <section class="section strategy-section">
-        <div class="container">
-          <div class="content-grid">
-            <div class="content-main">
-              <div class="section-icon">🧠</div>
-              <h2>Build, Adapt, Outsmart</h2>
-              <p class="large-text">
-                Forget waiting around. Wacky Warlords is built for instant tactical gameplay.
-                Before each match, players build a customized team from an expanding roster of heroes, races, and units.
-                Once the game begins, it's all about timing, placement, and momentum.
-              </p>
-
-              <div class="strategy-points">
-                <div class="point-item">
-                  <div class="point-icon">⚡</div>
-                  <h4>Will you rush early with fast skirmishers?</h4>
-                </div>
-                <div class="point-item">
-                  <div class="point-icon">🛡️</div>
-                  <h4>Hold the line with tanks and traps?</h4>
-                </div>
-                <div class="point-item">
-                  <div class="point-icon">🎯</div>
-                  <h4>Save resources for a surprise final push?</h4>
-                </div>
-              </div>
-
-              <p class="highlight-text">
-                Outthink your rival and bend the battlefield to your will.
-              </p>
-            </div>
-
-            <div class="content-media">
-              <div class="media-card">
-                <img src="https://place-hold.it/500x350/1a1a1a/4CAF50/png?text=Tactical+Battle" alt="Tactical Battle Screenshot" />
-                <div class="media-overlay">
-                  <h4>Tactical Battle Screenshot</h4>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
+        <div class="game-flow">
+          <div class="flow-step">
+            <div class="step-number">1</div>
+            <h3>Deploy your army from your base</h3>
+            <p>Choose your formation and timing carefully</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="step-number">2</div>
+            <h3>Push your forces across narrow lanes</h3>
+            <p>Control the battlefield momentum</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="step-number">3</div>
+            <h3>Shatter your opponent's stronghold</h3>
+            <p>Before they crush yours</p>
           </div>
         </div>
-      </section>
 
-      <!-- Features Grid - Full Width -->
-      <section class="section features-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-icon">🧙</div>
-            <h2>Warlords, Races, and Synergies</h2>
-            <p class="section-description">
-              Each unit belongs to a Race, and every hero is a Warlord with unique abilities.
-              Synergies between units, buffs from booster cards, and map-specific advantages create endless tactical possibilities.
-            </p>
-          </div>
+        <p class="flow-conclusion">
+          The battlefield is always in motion, and the line between victory and defeat shifts with every decision.
+        </p>
+      </div>
+    </section>
 
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="card-media">
-                <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Warlords" alt="Legendary Warlords" />
-              </div>
-              <div class="card-content">
-                <div class="card-icon">👑</div>
-                <h3>Legendary Warlords</h3>
-                <p>Each with unique abilities and command styles that define your strategic approach</p>
-              </div>
-            </div>
-
-            <div class="feature-card">
-              <div class="card-media">
-                <img src="https://place-hold.it/300x200/1a1a1a/4CAF50/png?text=Races" alt="Ancient Races" />
-              </div>
-              <div class="card-content">
-                <div class="card-icon">🏺</div>
-                <h3>Ancient Races</h3>
-                <p>From Vikings to future mechs - each with special synergies and playstyles</p>
-              </div>
-            </div>
-
-            <div class="feature-card">
-              <div class="card-media">
-                <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Cards" alt="Booster Cards" />
-              </div>
-              <div class="card-content">
-                <div class="card-icon">🃏</div>
-                <h3>Booster Cards</h3>
-                <p>Enhance and customize your army's capabilities with powerful modifiers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PvP Section - Full Width -->
-      <section class="section pvp-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-icon">🏆</div>
-            <h2>PvP Mayhem & Competitive Leagues</h2>
-          </div>
-
-          <div class="pvp-grid">
-            <div class="pvp-card">
-              <div class="pvp-icon">⚔️</div>
-              <h3>1v1 Ranked Duels</h3>
-              <p>Climb the ladder and prove your tactical supremacy in intense head-to-head battles</p>
-            </div>
-            <div class="pvp-card">
-              <div class="pvp-icon">🏆</div>
-              <h3>Seasonal Tournaments</h3>
-              <p>Compete for glory and exclusive rewards in limited-time competitive events</p>
-            </div>
-            <div class="pvp-card">
-              <div class="pvp-icon">⚡</div>
-              <h3>Faction-Based Events</h3>
-              <p>Join forces with your chosen race in massive community-wide battles</p>
-            </div>
-            <div class="pvp-card">
-              <div class="pvp-icon">🎮</div>
-              <h3>Custom Game Modes</h3>
-              <p>Experiment with community-created battles and unique rule sets</p>
-            </div>
-          </div>
-
-          <div class="pvp-highlight">
-            <p>
-              Whether you're here to crush the ladder, collect rare units, or just cause chaos with friends,
-              Wacky Warlords offers something for every kind of strategist.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Wacky Section - Full Width -->
-      <section class="section wacky-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-icon">😈</div>
-            <h2>Why Wacky?</h2>
-          </div>
-
-          <div class="wacky-content">
+    <!-- Strategy Section - Full Width -->
+    <section class="section strategy-section">
+      <div class="container">
+        <div class="content-grid">
+          <div class="content-main">
+            <div class="section-icon">🧠</div>
+            <h2>Build, Adapt, Outsmart</h2>
             <p class="large-text">
-              Sure, it's a game about Death. But don't expect grim silence.
-            </p>
-            <p>
-              Wacky Warlords is packed with over-the-top characters, unpredictable battlefield twists,
-              and tongue-in-cheek humor. It's a celebration of absurdity wrapped in tactical depth—where
-              a Viking berserker might team up with a futuristic mech monk to destroy a pyramid fortress
-              guarded by ghostly jesters.
+              Forget waiting around. Wacky Warlords is built for instant tactical gameplay.
+              Before each match, players build a customized team from an expanding roster of heroes, races, and units.
+              Once the game begins, it's all about timing, placement, and momentum.
             </p>
 
-            <div class="example-battle">
-              <div class="battle-combo">
-                <span class="combo-unit">🛡️ Viking Berserker</span>
-                <span class="combo-plus">+</span>
-                <span class="combo-unit">🤖 Mech Monk</span>
-                <span class="combo-vs">vs</span>
-                <span class="combo-target">🏺 Pyramid Fortress</span>
+            <div class="strategy-points">
+              <div class="point-item">
+                <div class="point-icon">⚡</div>
+                <h4>Will you rush early with fast skirmishers?</h4>
+              </div>
+              <div class="point-item">
+                <div class="point-icon">🛡️</div>
+                <h4>Hold the line with tanks and traps?</h4>
+              </div>
+              <div class="point-item">
+                <div class="point-icon">🎯</div>
+                <h4>Save resources for a surprise final push?</h4>
+              </div>
+            </div>
+
+            <p class="highlight-text">
+              Outthink your rival and bend the battlefield to your will.
+            </p>
+          </div>
+
+          <div class="content-media">
+            <div class="media-card">
+              <img src="https://place-hold.it/500x350/1a1a1a/4CAF50/png?text=Tactical+Battle" alt="Tactical Battle Screenshot" />
+              <div class="media-overlay">
+                <h4>Tactical Battle Screenshot</h4>
+                <p>Coming Soon</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Evolution Section - Full Width -->
-      <section class="section evolution-section">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-icon">🧪</div>
-            <h2>Always Evolving</h2>
-            <p class="section-description">
-              With frequent updates, new races, fresh Warlords, seasonal booster packs, and community tournaments,
-              Wacky Warlords is more than a game—it's an ever-expanding battlefield where strategy meets style.
-            </p>
+    <!-- Features Grid - Full Width -->
+    <section class="section features-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🧙</div>
+          <h2>Warlords, Races, and Synergies</h2>
+          <p class="section-description">
+            Each unit belongs to a Race, and every hero is a Warlord with unique abilities.
+            Synergies between units, buffs from booster cards, and map-specific advantages create endless tactical possibilities.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="card-media">
+              <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Warlords" alt="Legendary Warlords" />
+            </div>
+            <div class="card-content">
+              <div class="card-icon">👑</div>
+              <h3>Legendary Warlords</h3>
+              <p>Each with unique abilities and command styles that define your strategic approach</p>
+            </div>
           </div>
 
-          <div class="evolution-grid">
-            <div class="evolution-item">
-              <div class="evolution-icon">🆕</div>
-              <h4>Regular Content Updates</h4>
+          <div class="feature-card">
+            <div class="card-media">
+              <img src="https://place-hold.it/300x200/1a1a1a/4CAF50/png?text=Races" alt="Ancient Races" />
             </div>
-            <div class="evolution-item">
-              <div class="evolution-icon">🏁</div>
-              <h4>New Races & Warlords</h4>
+            <div class="card-content">
+              <div class="card-icon">🏺</div>
+              <h3>Ancient Races</h3>
+              <p>From Vikings to future mechs - each with special synergies and playstyles</p>
             </div>
-            <div class="evolution-item">
-              <div class="evolution-icon">📦</div>
-              <h4>Seasonal Booster Packs</h4>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-media">
+              <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Cards" alt="Booster Cards" />
             </div>
-            <div class="evolution-item">
-              <div class="evolution-icon">🎪</div>
-              <h4>Community Tournaments</h4>
+            <div class="card-content">
+              <div class="card-icon">🃏</div>
+              <h3>Booster Cards</h3>
+              <p>Enhance and customize your army's capabilities with powerful modifiers</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Call to Action - Full Width -->
-      <section class="cta-section">
-        <div class="container">
-          <div class="cta-content">
-            <h2>Build your army. Break the balance. Conquer the Calm.</h2>
-            <div class="cta-buttons">
-              <router-link to="/lore" class="btn btn-primary">
-                <span>Explore the Lore</span>
-                <div class="btn-icon">📖</div>
-              </router-link>
-              <router-link to="/support-us" class="btn btn-secondary">
-                <span>Support Development</span>
-                <div class="btn-icon">❤️</div>
-              </router-link>
+    <!-- PvP Section - Full Width -->
+    <section class="section pvp-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🏆</div>
+          <h2>PvP Mayhem & Competitive Leagues</h2>
+        </div>
+
+        <div class="pvp-grid">
+          <div class="pvp-card">
+            <div class="pvp-icon">⚔️</div>
+            <h3>1v1 Ranked Duels</h3>
+            <p>Climb the ladder and prove your tactical supremacy in intense head-to-head battles</p>
+          </div>
+          <div class="pvp-card">
+            <div class="pvp-icon">🏆</div>
+            <h3>Seasonal Tournaments</h3>
+            <p>Compete for glory and exclusive rewards in limited-time competitive events</p>
+          </div>
+          <div class="pvp-card">
+            <div class="pvp-icon">⚡</div>
+            <h3>Faction-Based Events</h3>
+            <p>Join forces with your chosen race in massive community-wide battles</p>
+          </div>
+          <div class="pvp-card">
+            <div class="pvp-icon">🎮</div>
+            <h3>Custom Game Modes</h3>
+            <p>Experiment with community-created battles and unique rule sets</p>
+          </div>
+        </div>
+
+        <div class="pvp-highlight">
+          <p>
+            Whether you're here to crush the ladder, collect rare units, or just cause chaos with friends,
+            Wacky Warlords offers something for every kind of strategist.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Wacky Section - Full Width -->
+    <section class="section wacky-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">😈</div>
+          <h2>Why Wacky?</h2>
+        </div>
+
+        <div class="wacky-content">
+          <p class="large-text">
+            Sure, it's a game about Death. But don't expect grim silence.
+          </p>
+          <p>
+            Wacky Warlords is packed with over-the-top characters, unpredictable battlefield twists,
+            and tongue-in-cheek humor. It's a celebration of absurdity wrapped in tactical depth—where
+            a Viking berserker might team up with a futuristic mech monk to destroy a pyramid fortress
+            guarded by ghostly jesters.
+          </p>
+
+          <div class="example-battle">
+            <div class="battle-combo">
+              <span class="combo-unit">🛡️ Viking Berserker</span>
+              <span class="combo-plus">+</span>
+              <span class="combo-unit">🤖 Mech Monk</span>
+              <span class="combo-vs">vs</span>
+              <span class="combo-target">🏺 Pyramid Fortress</span>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Evolution Section - Full Width -->
+    <section class="section evolution-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🧪</div>
+          <h2>Always Evolving</h2>
+          <p class="section-description">
+            With frequent updates, new races, fresh Warlords, seasonal booster packs, and community tournaments,
+            Wacky Warlords is more than a game—it's an ever-expanding battlefield where strategy meets style.
+          </p>
+        </div>
+
+        <div class="evolution-grid">
+          <div class="evolution-item">
+            <div class="evolution-icon">🆕</div>
+            <h4>Regular Content Updates</h4>
+          </div>
+          <div class="evolution-item">
+            <div class="evolution-icon">🏁</div>
+            <h4>New Races & Warlords</h4>
+          </div>
+          <div class="evolution-item">
+            <div class="evolution-icon">📦</div>
+            <h4>Seasonal Booster Packs</h4>
+          </div>
+          <div class="evolution-item">
+            <div class="evolution-icon">🎪</div>
+            <h4>Community Tournaments</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action - Full Width -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Build your army. Break the balance. Conquer the Calm.</h2>
+          <div class="cta-buttons">
+            <router-link to="/lore" class="btn btn-primary">
+              <span>Explore the Lore</span>
+              <div class="btn-icon">📖</div>
+            </router-link>
+            <router-link to="/support-us" class="btn btn-secondary">
+              <span>Support Development</span>
+              <div class="btn-icon">❤️</div>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

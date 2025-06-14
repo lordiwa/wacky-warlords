@@ -1,27 +1,38 @@
 <template>
   <div class="support-page">
-    <div class="container">
-      <header class="page-header">
-        <div class="header-icon">🚀</div>
-        <h1>Support Wacky Warlords</h1>
-        <p class="page-subtitle">Help us continue developing this amazing game</p>
-      </header>
+    <!-- Page Header - Full Width -->
+    <section class="page-header-section">
+      <div class="container">
+        <header class="page-header">
+          <div class="header-icon">🚀</div>
+          <h1>Support Wacky Warlords</h1>
+          <p class="page-subtitle">Help us continue developing this amazing game</p>
+        </header>
+      </div>
+    </section>
 
-      <section class="why-support">
-        <div class="why-content">
-          <h2>Why Support Us?</h2>
-          <p>Your support helps us:</p>
-          <ul class="support-benefits">
-            <li>Continue game development and add new features</li>
-            <li>Maintain and improve game servers</li>
-            <li>Create new content and expansions</li>
-            <li>Build a stronger gaming community</li>
-            <li>Keep the game free for everyone</li>
-          </ul>
+    <!-- Why Support Section - Full Width -->
+    <section class="why-support-section">
+      <div class="container">
+        <div class="why-support">
+          <div class="why-content">
+            <h2>Why Support Us?</h2>
+            <p>Your support helps us:</p>
+            <ul class="support-benefits">
+              <li>Continue game development and add new features</li>
+              <li>Maintain and improve game servers</li>
+              <li>Create new content and expansions</li>
+              <li>Build a stronger gaming community</li>
+              <li>Keep the game free for everyone</li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="support-options">
+    <!-- Support Options Section - Full Width -->
+    <section class="support-options-section">
+      <div class="container">
         <h2 class="section-title">Ways to Support</h2>
         <div class="support-grid">
           <div class="support-card primary">
@@ -83,177 +94,192 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="supporter-recognition">
-        <h2 class="section-title">Our Amazing Supporters</h2>
-        <p class="recognition-text">
-          We want to give a huge thanks to all our supporters who make Wacky Warlords possible!
-        </p>
-        <div class="supporter-tiers">
-          <div class="tier legendary">
-            <h4>💀 Legendary Warlords ($50+/month)</h4>
-            <p class="tier-description">Names will be added here as supporters join...</p>
-          </div>
-          <div class="tier epic">
-            <h4>⚔️ Epic Warriors ($25+/month)</h4>
-            <p class="tier-description">Names will be added here as supporters join...</p>
-          </div>
-          <div class="tier brave">
-            <h4>🛡️ Brave Fighters ($10+/month)</h4>
-            <p class="tier-description">Names will be added here as supporters join...</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="roadmap-section">
-        <h2 class="section-title">🗓 2026 Development Roadmap</h2>
-        <p class="roadmap-intro">
-          Your support directly funds these exciting content drops and features coming throughout 2026!
-        </p>
-
-        <div class="roadmap-timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">🧙 January 20</div>
-            <div class="timeline-content">
-              <h4>Hero Drop: The Pharaoh of Plagues</h4>
-              <p>Unleash a cursed tactician with sand-based spells and poisonous aura.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">⚔️ February 17</div>
-            <div class="timeline-content">
-              <h4>Ranked League Season 1 Begins</h4>
-              <p>Join the first global competition and climb your way out of purgatory.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">🎭 March 21</div>
-            <div class="timeline-content">
-              <h4>New Race: The Masquerade Court</h4>
-              <p>Elegant and eerie warriors who manipulate illusion and fear.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">📦 April 25</div>
-            <div class="timeline-content">
-              <h4>Booster Pack System Launch</h4>
-              <p>Collect, customize, and upgrade units with rare cards and modifiers.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item featured">
-            <div class="timeline-date">🏆 May 30</div>
-            <div class="timeline-content">
-              <h4>Community Tournament: Realm Clash I</h4>
-              <p>Open-entry tournament with in-game and cash rewards. Top 10 gain early access to future content.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">👑 June 15</div>
-            <div class="timeline-content">
-              <h4>Hero Drop: The Queen of Cinders</h4>
-              <p>A fiery assassin with an infernal dash and volcanic traps.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">🧬 July 12</div>
-            <div class="timeline-content">
-              <h4>New Race: The Forgotten Kin</h4>
-              <p>Twisted remnants of civilizations erased by Death, featuring cursed synergy mechanics.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">🃏 August 16</div>
-            <div class="timeline-content">
-              <h4>Booster Pack Expansion I: Trickster's Gambit</h4>
-              <p>New abilities, animations, and unique passives enter the pool.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">⚔️ September 14</div>
-            <div class="timeline-content">
-              <h4>Ranked League Season 2 Begins</h4>
-              <p>New balance patch and seasonal map rotation.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">🎮 October 11</div>
-            <div class="timeline-content">
-              <h4>Hero Drop: The Clockwork Duelist</h4>
-              <p>A mechanical master of parries and precision, designed for tactical players.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item featured">
-            <div class="timeline-date">🥇 November 8</div>
-            <div class="timeline-content">
-              <h4>Grand Tournament: Final Breath Cup</h4>
-              <p>Elite invitational with lore-relevant consequences and exclusive skins.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">🌀 December 5</div>
-            <div class="timeline-content">
-              <h4>Booster Pack Expansion II: Death's Wildcards</h4>
-              <p>Introduce chaos-altering cards, dual-unit boosts, and season-themed cosmetics.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="roadmap-note">
-          <p>
-            <strong>Supporter Perks:</strong> All monthly supporters get early access to new heroes and exclusive tournament invitations!
+    <!-- Supporter Recognition Section - Full Width -->
+    <section class="supporter-recognition-section">
+      <div class="container">
+        <div class="supporter-recognition">
+          <h2 class="section-title">Our Amazing Supporters</h2>
+          <p class="recognition-text">
+            We want to give a huge thanks to all our supporters who make Wacky Warlords possible!
           </p>
-        </div>
-      </section>
-
-      <section class="transparency">
-        <h2 class="section-title">Financial Transparency</h2>
-        <div class="transparency-content">
-          <p>We believe in being transparent about how your support is used:</p>
-          <div class="expense-breakdown">
-            <div class="expense-item">
-              <span class="expense-label">Development Tools & Software</span>
-              <div class="expense-bar">
-                <div class="expense-fill" style="width: 40%"></div>
-              </div>
-              <span class="expense-percent">40%</span>
+          <div class="supporter-tiers">
+            <div class="tier legendary">
+              <h4>💀 Legendary Warlords ($50+/month)</h4>
+              <p class="tier-description">Names will be added here as supporters join...</p>
             </div>
-            <div class="expense-item">
-              <span class="expense-label">Server Hosting & Infrastructure</span>
-              <div class="expense-bar">
-                <div class="expense-fill" style="width: 30%"></div>
-              </div>
-              <span class="expense-percent">30%</span>
+            <div class="tier epic">
+              <h4>⚔️ Epic Warriors ($25+/month)</h4>
+              <p class="tier-description">Names will be added here as supporters join...</p>
             </div>
-            <div class="expense-item">
-              <span class="expense-label">Art & Audio Assets</span>
-              <div class="expense-bar">
-                <div class="expense-fill" style="width: 20%"></div>
-              </div>
-              <span class="expense-percent">20%</span>
-            </div>
-            <div class="expense-item">
-              <span class="expense-label">Marketing & Community</span>
-              <div class="expense-bar">
-                <div class="expense-fill" style="width: 10%"></div>
-              </div>
-              <span class="expense-percent">10%</span>
+            <div class="tier brave">
+              <h4>🛡️ Brave Fighters ($10+/month)</h4>
+              <p class="tier-description">Names will be added here as supporters join...</p>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section - Full Width -->
+    <section class="roadmap-section-wrapper">
+      <div class="container">
+        <div class="roadmap-section">
+          <h2 class="section-title">🗓 2026 Development Roadmap</h2>
+          <p class="roadmap-intro">
+            Your support directly funds these exciting content drops and features coming throughout 2026!
+          </p>
+
+          <div class="roadmap-timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">🧙 January 20</div>
+              <div class="timeline-content">
+                <h4>Hero Drop: The Pharaoh of Plagues</h4>
+                <p>Unleash a cursed tactician with sand-based spells and poisonous aura.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">⚔️ February 17</div>
+              <div class="timeline-content">
+                <h4>Ranked League Season 1 Begins</h4>
+                <p>Join the first global competition and climb your way out of purgatory.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">🎭 March 21</div>
+              <div class="timeline-content">
+                <h4>New Race: The Masquerade Court</h4>
+                <p>Elegant and eerie warriors who manipulate illusion and fear.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">📦 April 25</div>
+              <div class="timeline-content">
+                <h4>Booster Pack System Launch</h4>
+                <p>Collect, customize, and upgrade units with rare cards and modifiers.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item featured">
+              <div class="timeline-date">🏆 May 30</div>
+              <div class="timeline-content">
+                <h4>Community Tournament: Realm Clash I</h4>
+                <p>Open-entry tournament with in-game and cash rewards. Top 10 gain early access to future content.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">👑 June 15</div>
+              <div class="timeline-content">
+                <h4>Hero Drop: The Queen of Cinders</h4>
+                <p>A fiery assassin with an infernal dash and volcanic traps.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">🧬 July 12</div>
+              <div class="timeline-content">
+                <h4>New Race: The Forgotten Kin</h4>
+                <p>Twisted remnants of civilizations erased by Death, featuring cursed synergy mechanics.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">🃏 August 16</div>
+              <div class="timeline-content">
+                <h4>Booster Pack Expansion I: Trickster's Gambit</h4>
+                <p>New abilities, animations, and unique passives enter the pool.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">⚔️ September 14</div>
+              <div class="timeline-content">
+                <h4>Ranked League Season 2 Begins</h4>
+                <p>New balance patch and seasonal map rotation.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">🎮 October 11</div>
+              <div class="timeline-content">
+                <h4>Hero Drop: The Clockwork Duelist</h4>
+                <p>A mechanical master of parries and precision, designed for tactical players.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item featured">
+              <div class="timeline-date">🥇 November 8</div>
+              <div class="timeline-content">
+                <h4>Grand Tournament: Final Breath Cup</h4>
+                <p>Elite invitational with lore-relevant consequences and exclusive skins.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">🌀 December 5</div>
+              <div class="timeline-content">
+                <h4>Booster Pack Expansion II: Death's Wildcards</h4>
+                <p>Introduce chaos-altering cards, dual-unit boosts, and season-themed cosmetics.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap-note">
+            <p>
+              <strong>Supporter Perks:</strong> All monthly supporters get early access to new heroes and exclusive tournament invitations!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparency Section - Full Width -->
+    <section class="transparency-section">
+      <div class="container">
+        <div class="transparency">
+          <h2 class="section-title">Financial Transparency</h2>
+          <div class="transparency-content">
+            <p>We believe in being transparent about how your support is used:</p>
+            <div class="expense-breakdown">
+              <div class="expense-item">
+                <span class="expense-label">Development Tools & Software</span>
+                <div class="expense-bar">
+                  <div class="expense-fill" style="width: 40%"></div>
+                </div>
+                <span class="expense-percent">40%</span>
+              </div>
+              <div class="expense-item">
+                <span class="expense-label">Server Hosting & Infrastructure</span>
+                <div class="expense-bar">
+                  <div class="expense-fill" style="width: 30%"></div>
+                </div>
+                <span class="expense-percent">30%</span>
+              </div>
+              <div class="expense-item">
+                <span class="expense-label">Art & Audio Assets</span>
+                <div class="expense-bar">
+                  <div class="expense-fill" style="width: 20%"></div>
+                </div>
+                <span class="expense-percent">20%</span>
+              </div>
+              <div class="expense-item">
+                <span class="expense-label">Marketing & Community</span>
+                <div class="expense-bar">
+                  <div class="expense-fill" style="width: 10%"></div>
+                </div>
+                <span class="expense-percent">10%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
