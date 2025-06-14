@@ -330,7 +330,6 @@
 /* Hero Section - Full Width like Home */
 .hero-section {
   min-height: 100vh;
-  min-width: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -284,7 +284,6 @@ const makeDonation = (amount) => {
 
 .container {
   max-width: 1200px;
-  min-width: 120vh;
   margin: 0 auto;
   padding: 0 1rem;
 }

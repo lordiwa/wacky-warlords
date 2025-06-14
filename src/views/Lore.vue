@@ -359,8 +359,7 @@
 
 .hero-container {
   text-align: center;
-  max-width: 900px;
-  min-width: 120vh;
+  max-width: 1200px;
   padding: 0 2rem;
   position: relative;
   z-index: 2;
