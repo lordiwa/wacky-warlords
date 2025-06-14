@@ -102,6 +102,117 @@
         </div>
       </section>
 
+      <section class="roadmap-section">
+        <h2 class="section-title">🗓 2026 Development Roadmap</h2>
+        <p class="roadmap-intro">
+          Your support directly funds these exciting content drops and features coming throughout 2026!
+        </p>
+
+        <div class="roadmap-timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">🧙 January 20</div>
+            <div class="timeline-content">
+              <h4>Hero Drop: The Pharaoh of Plagues</h4>
+              <p>Unleash a cursed tactician with sand-based spells and poisonous aura.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">⚔️ February 17</div>
+            <div class="timeline-content">
+              <h4>Ranked League Season 1 Begins</h4>
+              <p>Join the first global competition and climb your way out of purgatory.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">🎭 March 21</div>
+            <div class="timeline-content">
+              <h4>New Race: The Masquerade Court</h4>
+              <p>Elegant and eerie warriors who manipulate illusion and fear.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">📦 April 25</div>
+            <div class="timeline-content">
+              <h4>Booster Pack System Launch</h4>
+              <p>Collect, customize, and upgrade units with rare cards and modifiers.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item featured">
+            <div class="timeline-date">🏆 May 30</div>
+            <div class="timeline-content">
+              <h4>Community Tournament: Realm Clash I</h4>
+              <p>Open-entry tournament with in-game and cash rewards. Top 10 gain early access to future content.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">👑 June 15</div>
+            <div class="timeline-content">
+              <h4>Hero Drop: The Queen of Cinders</h4>
+              <p>A fiery assassin with an infernal dash and volcanic traps.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">🧬 July 12</div>
+            <div class="timeline-content">
+              <h4>New Race: The Forgotten Kin</h4>
+              <p>Twisted remnants of civilizations erased by Death, featuring cursed synergy mechanics.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">🃏 August 16</div>
+            <div class="timeline-content">
+              <h4>Booster Pack Expansion I: Trickster's Gambit</h4>
+              <p>New abilities, animations, and unique passives enter the pool.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">⚔️ September 14</div>
+            <div class="timeline-content">
+              <h4>Ranked League Season 2 Begins</h4>
+              <p>New balance patch and seasonal map rotation.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">🎮 October 11</div>
+            <div class="timeline-content">
+              <h4>Hero Drop: The Clockwork Duelist</h4>
+              <p>A mechanical master of parries and precision, designed for tactical players.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item featured">
+            <div class="timeline-date">🥇 November 8</div>
+            <div class="timeline-content">
+              <h4>Grand Tournament: Final Breath Cup</h4>
+              <p>Elite invitational with lore-relevant consequences and exclusive skins.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">🌀 December 5</div>
+            <div class="timeline-content">
+              <h4>Booster Pack Expansion II: Death's Wildcards</h4>
+              <p>Introduce chaos-altering cards, dual-unit boosts, and season-themed cosmetics.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap-note">
+          <p>
+            <strong>Supporter Perks:</strong> All monthly supporters get early access to new heroes and exclusive tournament invitations!
+          </p>
+        </div>
+      </section>
+
       <section class="transparency">
         <h2 class="section-title">Financial Transparency</h2>
         <div class="transparency-content">
