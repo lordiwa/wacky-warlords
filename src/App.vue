@@ -73,17 +73,28 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+
+  // Prevent body scroll when menu is open
+  if (isMenuOpen.value) {
+    document.body.classList.add('menu-open')
+  } else {
+    document.body.classList.remove('menu-open')
+  }
 }
 
 const closeMenu = () => {
   isMenuOpen.value = false
+  document.body.classList.remove('menu-open')
 }
+onUnmounted(() => {
+  document.body.classList.remove('menu-open')
+})
 </script>
 
 <style scoped>
@@ -431,5 +442,70 @@ html {
 
 .mobile-menu-toggle.active span:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-menu {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 70px; /* Height of your nav bar */
+    left: 0;
+    right: 0;
+    width: 100vw; /* Full viewport width */
+    background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+    flex-direction: column;
+    padding: 1rem 0; /* Removed horizontal padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid var(--mystic-green);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    gap: 0;
+    z-index: 1000;
+    max-height: calc(100vh - 70px); /* Prevent overflow */
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+
+  .nav-menu-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-container {
+    min-height: 70px;
+    overflow: visible; /* Allow menu to overflow */
+  }
+
+  /* Prevent body scroll when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
 }
 </style>
