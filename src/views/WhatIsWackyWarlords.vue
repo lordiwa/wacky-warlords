@@ -1,226 +1,286 @@
 <template>
   <div class="what-is-page">
     <div class="container">
-      <!-- Hero Header -->
-      <header class="page-header">
-        <div class="header-icon">🏰</div>
-        <h1>What Is Wacky Warlords?</h1>
-        <p class="page-subtitle">⚔️ A Battle Across Time and Death</p>
-        <p class="header-description">
-          Wacky Warlords is a fast-paced, real-time strategy game where the world's most legendary warriors—revived by Death itself—clash in chaotic skirmishes for a chance to return to life.
-        </p>
-        <div class="header-tags">
-          <span class="tag">Strategy</span>
-          <span class="tag">Madness</span>
-          <span class="tag">War with a twist</span>
-        </div>
-      </header>
-
-      <!-- Game Loop Section -->
-      <section class="game-loop-section">
-        <div class="section-header">
-          <div class="section-icon">🎮</div>
-          <h2>The Game Loop: Strategy Meets Speed</h2>
-        </div>
-        <p class="section-intro">
-          In Wacky Warlords, players command squads of units chosen before battle. Matches play out in real time,
-          with tug-of-war mechanics that turn every second into a high-stakes decision.
-        </p>
-
-        <div class="game-flow">
-          <div class="flow-step">
-            <div class="step-number">1</div>
-            <h3>Deploy your army from your base</h3>
-            <p>Choose your formation and timing carefully</p>
+      <!-- Hero Section - Full Width -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-icon">🏰</div>
+          <h1 class="hero-title">What Is Wacky Warlords?</h1>
+          <p class="hero-subtitle">⚔️ A Battle Across Time and Death</p>
+          <p class="hero-description">
+            Wacky Warlords is a fast-paced, real-time strategy game where the world's most legendary warriors—revived by Death itself—clash in chaotic skirmishes for a chance to return to life.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Strategy</span>
+            <span class="tag">Madness</span>
+            <span class="tag">War with a twist</span>
           </div>
-          <div class="flow-arrow">➜</div>
-          <div class="flow-step">
-            <div class="step-number">2</div>
-            <h3>Push your forces across narrow lanes</h3>
-            <p>Control the battlefield momentum</p>
-          </div>
-          <div class="flow-arrow">➜</div>
-          <div class="flow-step">
-            <div class="step-number">3</div>
-            <h3>Shatter your opponent's stronghold</h3>
-            <p>Before they crush yours</p>
+          <div class="hero-actions">
+            <router-link to="/lore" class="btn btn-primary">
+              <span class="btn-icon">🎮</span>
+              Play Now
+            </router-link>
+            <router-link to="/lore" class="btn btn-secondary">
+              <span class="btn-icon">📖</span>
+              Discover Lore
+            </router-link>
           </div>
         </div>
-
-        <p class="flow-conclusion">
-          The battlefield is always in motion, and the line between victory and defeat shifts with every decision.
-        </p>
       </section>
 
-      <!-- Strategy Section -->
-      <section class="strategy-section">
-        <div class="strategy-grid">
-          <div class="strategy-content">
-            <div class="section-icon">🧠</div>
-            <h2>Build, Adapt, Outsmart</h2>
+      <!-- Game Loop Section - Full Width -->
+      <section class="section game-loop-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-icon">🎮</div>
+            <h2>The Game Loop: Strategy Meets Speed</h2>
+            <p class="section-description">
+              In Wacky Warlords, players command squads of units chosen before battle. Matches play out in real time,
+              with tug-of-war mechanics that turn every second into a high-stakes decision.
+            </p>
+          </div>
+
+          <div class="game-flow">
+            <div class="flow-step">
+              <div class="step-number">1</div>
+              <h3>Deploy your army from your base</h3>
+              <p>Choose your formation and timing carefully</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="step-number">2</div>
+              <h3>Push your forces across narrow lanes</h3>
+              <p>Control the battlefield momentum</p>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step">
+              <div class="step-number">3</div>
+              <h3>Shatter your opponent's stronghold</h3>
+              <p>Before they crush yours</p>
+            </div>
+          </div>
+
+          <p class="flow-conclusion">
+            The battlefield is always in motion, and the line between victory and defeat shifts with every decision.
+          </p>
+        </div>
+      </section>
+
+      <!-- Strategy Section - Full Width -->
+      <section class="section strategy-section">
+        <div class="container">
+          <div class="content-grid">
+            <div class="content-main">
+              <div class="section-icon">🧠</div>
+              <h2>Build, Adapt, Outsmart</h2>
+              <p class="large-text">
+                Forget waiting around. Wacky Warlords is built for instant tactical gameplay.
+                Before each match, players build a customized team from an expanding roster of heroes, races, and units.
+                Once the game begins, it's all about timing, placement, and momentum.
+              </p>
+
+              <div class="strategy-points">
+                <div class="point-item">
+                  <div class="point-icon">⚡</div>
+                  <h4>Will you rush early with fast skirmishers?</h4>
+                </div>
+                <div class="point-item">
+                  <div class="point-icon">🛡️</div>
+                  <h4>Hold the line with tanks and traps?</h4>
+                </div>
+                <div class="point-item">
+                  <div class="point-icon">🎯</div>
+                  <h4>Save resources for a surprise final push?</h4>
+                </div>
+              </div>
+
+              <p class="highlight-text">
+                Outthink your rival and bend the battlefield to your will.
+              </p>
+            </div>
+
+            <div class="content-media">
+              <div class="media-card">
+                <img src="https://place-hold.it/500x350/1a1a1a/4CAF50/png?text=Tactical+Battle" alt="Tactical Battle Screenshot" />
+                <div class="media-overlay">
+                  <h4>Tactical Battle Screenshot</h4>
+                  <p>Coming Soon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Grid - Full Width -->
+      <section class="section features-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-icon">🧙</div>
+            <h2>Warlords, Races, and Synergies</h2>
+            <p class="section-description">
+              Each unit belongs to a Race, and every hero is a Warlord with unique abilities.
+              Synergies between units, buffs from booster cards, and map-specific advantages create endless tactical possibilities.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="card-media">
+                <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Warlords" alt="Legendary Warlords" />
+              </div>
+              <div class="card-content">
+                <div class="card-icon">👑</div>
+                <h3>Legendary Warlords</h3>
+                <p>Each with unique abilities and command styles that define your strategic approach</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-media">
+                <img src="https://place-hold.it/300x200/1a1a1a/4CAF50/png?text=Races" alt="Ancient Races" />
+              </div>
+              <div class="card-content">
+                <div class="card-icon">🏺</div>
+                <h3>Ancient Races</h3>
+                <p>From Vikings to future mechs - each with special synergies and playstyles</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-media">
+                <img src="https://place-hold.it/300x200/1a1a1a/D2691E/png?text=Cards" alt="Booster Cards" />
+              </div>
+              <div class="card-content">
+                <div class="card-icon">🃏</div>
+                <h3>Booster Cards</h3>
+                <p>Enhance and customize your army's capabilities with powerful modifiers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PvP Section - Full Width -->
+      <section class="section pvp-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-icon">🏆</div>
+            <h2>PvP Mayhem & Competitive Leagues</h2>
+          </div>
+
+          <div class="pvp-grid">
+            <div class="pvp-card">
+              <div class="pvp-icon">⚔️</div>
+              <h3>1v1 Ranked Duels</h3>
+              <p>Climb the ladder and prove your tactical supremacy in intense head-to-head battles</p>
+            </div>
+            <div class="pvp-card">
+              <div class="pvp-icon">🏆</div>
+              <h3>Seasonal Tournaments</h3>
+              <p>Compete for glory and exclusive rewards in limited-time competitive events</p>
+            </div>
+            <div class="pvp-card">
+              <div class="pvp-icon">⚡</div>
+              <h3>Faction-Based Events</h3>
+              <p>Join forces with your chosen race in massive community-wide battles</p>
+            </div>
+            <div class="pvp-card">
+              <div class="pvp-icon">🎮</div>
+              <h3>Custom Game Modes</h3>
+              <p>Experiment with community-created battles and unique rule sets</p>
+            </div>
+          </div>
+
+          <div class="pvp-highlight">
             <p>
-              Forget waiting around. Wacky Warlords is built for instant tactical gameplay.
-              Before each match, players build a customized team from an expanding roster of heroes, races, and units.
-              Once the game begins, it's all about timing, placement, and momentum.
-            </p>
-
-            <div class="strategy-questions">
-              <div class="question-item">
-                <strong>Will you rush early with fast skirmishers?</strong>
-              </div>
-              <div class="question-item">
-                <strong>Hold the line with tanks and traps?</strong>
-              </div>
-              <div class="question-item">
-                <strong>Save resources for a surprise final push?</strong>
-              </div>
-            </div>
-
-            <p class="strategy-conclusion">
-              Outthink your rival and bend the battlefield to your will.
+              Whether you're here to crush the ladder, collect rare units, or just cause chaos with friends,
+              Wacky Warlords offers something for every kind of strategist.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div class="strategy-visual">
-            <div class="placeholder-battle">
-              <div class="battle-icon">⚔️</div>
-              <p>Tactical Battle Screenshot</p>
-              <small>Coming Soon</small>
+      <!-- Why Wacky Section - Full Width -->
+      <section class="section wacky-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-icon">😈</div>
+            <h2>Why Wacky?</h2>
+          </div>
+
+          <div class="wacky-content">
+            <p class="large-text">
+              Sure, it's a game about Death. But don't expect grim silence.
+            </p>
+            <p>
+              Wacky Warlords is packed with over-the-top characters, unpredictable battlefield twists,
+              and tongue-in-cheek humor. It's a celebration of absurdity wrapped in tactical depth—where
+              a Viking berserker might team up with a futuristic mech monk to destroy a pyramid fortress
+              guarded by ghostly jesters.
+            </p>
+
+            <div class="example-battle">
+              <div class="battle-combo">
+                <span class="combo-unit">🛡️ Viking Berserker</span>
+                <span class="combo-plus">+</span>
+                <span class="combo-unit">🤖 Mech Monk</span>
+                <span class="combo-vs">vs</span>
+                <span class="combo-target">🏺 Pyramid Fortress</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Warlords & Races Section -->
-      <section class="warlords-section">
-        <div class="section-header">
-          <div class="section-icon">🧙</div>
-          <h2>Warlords, Races, and Synergies</h2>
-        </div>
-        <p class="section-description">
-          Each unit belongs to a Race, and every hero is a Warlord with unique abilities.
-          Synergies between units, buffs from booster cards, and map-specific advantages create endless tactical possibilities.
-        </p>
-        <p>
-          Expect to experiment, mix styles, and find the loadout that matches your playstyle—or counters your opponent's.
-        </p>
+      <!-- Evolution Section - Full Width -->
+      <section class="section evolution-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-icon">🧪</div>
+            <h2>Always Evolving</h2>
+            <p class="section-description">
+              With frequent updates, new races, fresh Warlords, seasonal booster packs, and community tournaments,
+              Wacky Warlords is more than a game—it's an ever-expanding battlefield where strategy meets style.
+            </p>
+          </div>
 
-        <div class="synergy-showcase">
-          <div class="synergy-card">
-            <div class="card-icon">👑</div>
-            <h4>Legendary Warlords</h4>
-            <p>Each with unique abilities and command styles</p>
-          </div>
-          <div class="synergy-card">
-            <div class="card-icon">🏺</div>
-            <h4>Ancient Races</h4>
-            <p>From Vikings to future mechs - each with special synergies</p>
-          </div>
-          <div class="synergy-card">
-            <div class="card-icon">🃏</div>
-            <h4>Booster Cards</h4>
-            <p>Enhance and customize your army's capabilities</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- PvP Section -->
-      <section class="pvp-section">
-        <div class="section-header">
-          <div class="section-icon">🏆</div>
-          <h2>PvP Mayhem & Competitive Leagues</h2>
-        </div>
-
-        <div class="pvp-grid">
-          <div class="pvp-mode">
-            <h3>1v1 Ranked Duels</h3>
-            <p>Climb the ladder and prove your tactical supremacy</p>
-          </div>
-          <div class="pvp-mode">
-            <h3>Seasonal Tournaments</h3>
-            <p>Compete for glory and exclusive rewards</p>
-          </div>
-          <div class="pvp-mode">
-            <h3>Faction-Based Events</h3>
-            <p>Join forces with your chosen race</p>
-          </div>
-          <div class="pvp-mode">
-            <h3>Custom Game Modes</h3>
-            <p>Experiment with community-created battles</p>
-          </div>
-        </div>
-
-        <p class="pvp-conclusion">
-          Whether you're here to crush the ladder, collect rare units, or just cause chaos with friends,
-          Wacky Warlords offers something for every kind of strategist.
-        </p>
-      </section>
-
-      <!-- Why Wacky Section -->
-      <section class="wacky-section">
-        <div class="wacky-content">
-          <div class="section-icon">😈</div>
-          <h2>Why Wacky?</h2>
-          <p>
-            Sure, it's a game about Death. But don't expect grim silence.
-          </p>
-          <p>
-            Wacky Warlords is packed with over-the-top characters, unpredictable battlefield twists,
-            and tongue-in-cheek humor. It's a celebration of absurdity wrapped in tactical depth—where
-            a Viking berserker might team up with a futuristic mech monk to destroy a pyramid fortress
-            guarded by ghostly jesters.
-          </p>
-        </div>
-
-        <div class="wacky-examples">
-          <div class="example-combo">
-            <span class="combo-unit">🛡️ Viking Berserker</span>
-            <span class="combo-plus">+</span>
-            <span class="combo-unit">🤖 Mech Monk</span>
-            <span class="combo-vs">vs</span>
-            <span class="combo-target">🏺 Pyramid Fortress</span>
+          <div class="evolution-grid">
+            <div class="evolution-item">
+              <div class="evolution-icon">🆕</div>
+              <h4>Regular Content Updates</h4>
+            </div>
+            <div class="evolution-item">
+              <div class="evolution-icon">🏁</div>
+              <h4>New Races & Warlords</h4>
+            </div>
+            <div class="evolution-item">
+              <div class="evolution-icon">📦</div>
+              <h4>Seasonal Booster Packs</h4>
+            </div>
+            <div class="evolution-item">
+              <div class="evolution-icon">🎪</div>
+              <h4>Community Tournaments</h4>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Evolution Section -->
-      <section class="evolution-section">
-        <div class="section-header">
-          <div class="section-icon">🧪</div>
-          <h2>Always Evolving</h2>
-        </div>
-        <p>
-          With frequent updates, new races, fresh Warlords, seasonal booster packs, and community tournaments,
-          Wacky Warlords is more than a game—it's an ever-expanding battlefield where strategy meets style.
-        </p>
-
-        <div class="evolution-features">
-          <div class="feature-item">
-            <span class="feature-icon">🆕</span>
-            <span>Regular Content Updates</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">🏁</span>
-            <span>New Races & Warlords</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">📦</span>
-            <span>Seasonal Booster Packs</span>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">🎪</span>
-            <span>Community Tournaments</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Call to Action -->
+      <!-- Call to Action - Full Width -->
       <section class="cta-section">
-        <div class="cta-content">
-          <h2>Build your army. Break the balance. Conquer the Calm.</h2>
-          <div class="cta-buttons">
-            <router-link to="/lore" class="btn btn-primary">Explore the Lore</router-link>
-            <router-link to="/support-us" class="btn btn-secondary">Support Development</router-link>
+        <div class="container">
+          <div class="cta-content">
+            <h2>Build your army. Break the balance. Conquer the Calm.</h2>
+            <div class="cta-buttons">
+              <router-link to="/lore" class="btn btn-primary">
+                <span>Explore the Lore</span>
+                <div class="btn-icon">📖</div>
+              </router-link>
+              <router-link to="/support-us" class="btn btn-secondary">
+                <span>Support Development</span>
+                <div class="btn-icon">❤️</div>
+              </router-link>
+            </div>
           </div>
         </div>
       </section>
@@ -233,505 +293,806 @@
 </script>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+:root {
+  --death-black: #0a0a0a;
+  --dark-stone: #1a1a1a;
+  --ancient-brown: #2d1f17;
+  --mystic-green: #4CAF50;
+  --death-green: #2e7d32;
+  --bone-white: #f5f5dc;
+  --orange-glow: #D2691E;
+  --shadow-gray: #2c2c2c;
+  --card-radius: 24px;
+  --section-spacing: 4rem;
 }
 
-/* Page Header */
-.page-header {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
-  color: white;
-  border-radius: 16px;
-  margin-bottom: 4rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.what-is-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--death-black);
+  color: var(--bone-white);
+  min-height: 100vh;
+}
+
+.section {
+  width: 100%;
+  padding: var(--section-spacing) 0;
+  margin: 0;
+}
+
+/* Hero Section - Full Width like Home */
+.hero-section {
+  min-height: 100vh;
+  min-width: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
   position: relative;
   overflow: hidden;
 }
 
-.page-header::before {
+.hero-section::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="20" opacity="0.1">⚔️</text></svg>') repeat;
+  background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+  radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.header-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.page-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+.hero-container {
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.page-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  color: #3498db;
-}
-
-.header-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.hero-icon {
+  font-size: 4rem;
   margin-bottom: 2rem;
-  opacity: 0.9;
-  max-width: 800px;
+  filter: drop-shadow(0 0 20px var(--mystic-green));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--orange-glow);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--mystic-green);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header-tags {
+.hero-tags {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
 }
 
 .tag {
-  background: rgba(52, 152, 219, 0.2);
-  border: 2px solid #3498db;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
+  background: rgba(76, 175, 80, 0.15);
+  border: 2px solid var(--mystic-green);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: var(--bone-white);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-/* Section Headers */
+.tag:hover {
+  background: rgba(76, 175, 80, 0.25);
+  transform: translateY(-2px);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+
 .section-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 10px var(--mystic-green));
 }
 
 .section-header h2 {
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--orange-glow);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.section-intro, .section-description {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-  text-align: center;
+.section-description {
+  font-size: 1.2rem;
+  color: var(--bone-white);
+  line-height: 1.7;
   max-width: 800px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
-/* Game Loop Section */
+.large-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--bone-white);
+}
+
+.highlight-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--orange-glow);
+  margin-top: 2rem;
+}
+
+/* Game Loop Section - Background */
 .game-loop-section {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  margin-bottom: 4rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  border-top: 1px solid var(--shadow-gray);
+  border-bottom: 1px solid var(--shadow-gray);
 }
 
 .game-flow {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0;
+  gap: 3rem;
+  margin: 4rem 0;
   flex-wrap: wrap;
 }
 
 .flow-step {
-  background: #f8f9fa;
-  padding: 2rem;
-  border-radius: 12px;
+  background: rgba(76, 175, 80, 0.1);
+  border: 2px solid var(--mystic-green);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
   text-align: center;
-  max-width: 250px;
+  max-width: 280px;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
 }
 
 .step-number {
-  width: 40px;
-  height: 40px;
-  background: #3498db;
-  color: white;
+  width: 50px;
+  height: 50px;
+  background: var(--mystic-green);
+  color: var(--death-black);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin: 0 auto 1rem;
+  font-size: 1.25rem;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
 }
 
 .flow-step h3 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  color: var(--bone-white);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .flow-step p {
-  color: #666;
-  font-size: 0.9rem;
+  color: var(--bone-white);
+  opacity: 0.8;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .flow-arrow {
-  font-size: 2rem;
-  color: #3498db;
+  font-size: 2.5rem;
+  color: var(--orange-glow);
   font-weight: bold;
+  text-shadow: 0 0 10px var(--orange-glow);
 }
 
 .flow-conclusion {
   text-align: center;
   font-style: italic;
-  color: #666;
-  font-size: 1.1rem;
-  margin-top: 2rem;
+  color: var(--bone-white);
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  opacity: 0.9;
 }
 
 /* Strategy Section */
 .strategy-section {
-  margin-bottom: 4rem;
+  background: var(--death-black);
 }
 
-.strategy-grid {
+.content-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
   align-items: center;
 }
 
-.strategy-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+.content-main {
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--shadow-gray);
 }
 
-.strategy-content h2 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
+.strategy-points {
+  margin: 3rem 0;
+}
+
+.point-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-left: 4px solid var(--mystic-green);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.strategy-content p {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+.point-item:hover {
+  transform: translateX(10px);
+  background: rgba(76, 175, 80, 0.15);
 }
 
-.strategy-questions {
-  margin: 2rem 0;
+.point-icon {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 5px var(--orange-glow));
 }
 
-.question-item {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  background: #f8f9fa;
-  border-left: 4px solid #3498db;
-  border-radius: 0 8px 8px 0;
-  color: #2c3e50;
+.point-item h4 {
+  color: var(--bone-white);
+  font-size: 1.1rem;
+  margin: 0;
 }
 
-.strategy-conclusion {
-  font-weight: 600;
-  color: #2c3e50;
-}
-
-.strategy-visual {
+.content-media {
   display: flex;
   justify-content: center;
 }
 
-.placeholder-battle {
-  background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  text-align: center;
-  color: #7f8c8d;
+.media-card {
+  position: relative;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  border: 2px solid var(--mystic-green);
+  transition: all 0.3s ease;
+}
+
+.media-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
+}
+
+.media-card img {
   width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
-.battle-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.media-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 2rem 1.5rem 1.5rem;
+  color: white;
 }
 
-/* Warlords Section */
-.warlords-section {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  margin-bottom: 4rem;
+.media-overlay h4 {
+  color: var(--orange-glow);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.synergy-showcase {
+/* Features Section */
+.features-section {
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  border-top: 1px solid var(--shadow-gray);
+  border-bottom: 1px solid var(--shadow-gray);
+}
+
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
-.synergy-card {
-  background: #f8f9fa;
+.feature-card {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
+}
+
+.card-media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
   padding: 2rem;
-  border-radius: 12px;
   text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.synergy-card:hover {
-  transform: translateY(-5px);
 }
 
 .card-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px var(--orange-glow));
 }
 
-.synergy-card h4 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+.card-content h3 {
+  color: var(--orange-glow);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
-.synergy-card p {
-  color: #666;
-  font-size: 0.9rem;
+.card-content p {
+  color: var(--bone-white);
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* PvP Section */
 .pvp-section {
-  margin-bottom: 4rem;
+  background: var(--death-black);
 }
 
 .pvp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
-.pvp-mode {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+.pvp-card {
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  border: 2px solid var(--mystic-green);
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
 }
 
-.pvp-mode:hover {
+.pvp-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
+  border-color: var(--orange-glow);
 }
 
-.pvp-mode h3 {
-  color: #2c3e50;
+.pvp-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 10px var(--mystic-green));
+}
+
+.pvp-card h3 {
+  color: var(--orange-glow);
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
-.pvp-mode p {
-  color: #666;
-  line-height: 1.5;
-}
-
-.pvp-conclusion {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
+.pvp-card p {
+  color: var(--bone-white);
   line-height: 1.6;
-  margin-top: 2rem;
+  opacity: 0.9;
+}
+
+.pvp-highlight {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 16px;
+  border: 1px solid var(--mystic-green);
+}
+
+.pvp-highlight p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--bone-white);
+  margin: 0;
 }
 
 /* Wacky Section */
 .wacky-section {
-  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-  color: white;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  margin-bottom: 4rem;
-  text-align: center;
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+  border-top: 2px solid var(--orange-glow);
+  border-bottom: 2px solid var(--orange-glow);
 }
 
-.wacky-content h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+.wacky-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .wacky-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
+  margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
-.wacky-examples {
-  margin-top: 2rem;
+.example-battle {
+  margin-top: 3rem;
 }
 
-.example-combo {
+.battle-combo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  background: rgba(255,255,255,0.1);
-  padding: 1.5rem;
-  border-radius: 12px;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
   font-weight: 600;
+  border: 1px solid var(--mystic-green);
 }
 
 .combo-unit {
-  background: rgba(255,255,255,0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  background: rgba(210, 105, 30, 0.2);
+  border: 2px solid var(--orange-glow);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
 }
 
 .combo-plus, .combo-vs {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: var(--mystic-green);
 }
 
 .combo-target {
-  background: rgba(255,255,255,0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  background: rgba(210, 105, 30, 0.2);
+  border: 2px solid var(--orange-glow);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
 }
 
 /* Evolution Section */
 .evolution-section {
-  background: white;
-  padding: 3rem 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  margin-bottom: 4rem;
+  background: var(--death-black);
 }
 
-.evolution-features {
+.evolution-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.feature-item {
+.evolution-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  font-weight: 600;
-  color: #2c3e50;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
+  border-radius: 16px;
+  transition: all 0.3s ease;
 }
 
-.feature-icon {
-  font-size: 1.5rem;
+.evolution-item:hover {
+  transform: translateY(-5px);
+  background: rgba(76, 175, 80, 0.15);
+}
+
+.evolution-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 5px var(--orange-glow));
+}
+
+.evolution-item h4 {
+  color: var(--bone-white);
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 /* Call to Action */
 .cta-section {
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+  border-top: 2px solid var(--mystic-green);
+}
+
+.cta-content {
   text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
-  color: white;
-  border-radius: 16px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .cta-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: var(--orange-glow);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  line-height: 1.2;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 2.5rem;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  display: inline-block;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn-primary {
-  background-color: #3498db;
-  color: white;
+  background: var(--mystic-green);
+  color: var(--death-black);
+  border-color: var(--mystic-green);
 }
 
 .btn-primary:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
+  background: var(--death-green);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  background: transparent;
+  color: var(--orange-glow);
+  border-color: var(--orange-glow);
 }
 
 .btn-secondary:hover {
-  background-color: white;
-  color: #8e44ad;
+  background: var(--orange-glow);
+  color: var(--death-black);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(210, 105, 30, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .page-header h1 {
-    font-size: 2rem;
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1.5rem;
   }
 
-  .strategy-grid {
+  .content-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 3rem;
+  }
+
+  .hero-container {
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .content-main {
+    padding: 2rem;
   }
 
   .game-flow {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .flow-arrow {
     transform: rotate(90deg);
+    font-size: 2rem;
   }
 
-  .cta-content h2 {
-    font-size: 1.8rem;
+  .features-grid {
+    grid-template-columns: 1fr;
   }
 
-  .cta-buttons {
+  .pvp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evolution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons,
+  .hero-actions {
     flex-direction: column;
     align-items: center;
   }
 
-  .example-combo {
+  .battle-combo {
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-tags {
     gap: 0.5rem;
+  }
+
+  .tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 0 0.5rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .content-main {
+    padding: 1.5rem;
+  }
+
+  .flow-step {
+    padding: 2rem 1.5rem;
+  }
+
+  .pvp-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .evolution-item {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .point-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .hero-icon,
+  .flow-step,
+  .feature-card,
+  .pvp-card,
+  .evolution-item,
+  .btn {
+    animation: none;
+    transition: none;
+  }
+
+  .btn::before {
+    display: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  .flow-step,
+  .feature-card,
+  .pvp-card {
+    border-width: 3px;
+  }
+
+  .tag,
+  .btn {
+    border-width: 3px;
   }
 }
 </style>

@@ -2,6 +2,7 @@
   <div class="support-page">
     <div class="container">
       <header class="page-header">
+        <div class="header-icon">🚀</div>
         <h1>Support Wacky Warlords</h1>
         <p class="page-subtitle">Help us continue developing this amazing game</p>
       </header>
@@ -29,6 +30,7 @@
               <div class="support-badge">Most Popular</div>
             </div>
             <div class="card-content">
+              <img src="https://place-hold.it/200x120/1a1a1a/4CAF50/png?text=Patreon" alt="Monthly Support" />
               <p>Join our Patreon community and get exclusive perks:</p>
               <ul class="perk-list">
                 <li>Early access to new features</li>
@@ -46,6 +48,7 @@
               <h3>One-Time Donation</h3>
             </div>
             <div class="card-content">
+              <img src="https://place-hold.it/200x120/1a1a1a/D2691E/png?text=Donate" alt="One-Time Donation" />
               <p>Make a one-time contribution to show your support:</p>
               <ul class="perk-list">
                 <li>Supporter badge in-game</li>
@@ -67,6 +70,7 @@
               <h3>Free Support</h3>
             </div>
             <div class="card-content">
+              <img src="https://place-hold.it/200x120/1a1a1a/4CAF50/png?text=Share" alt="Free Support" />
               <p>Support us without spending money:</p>
               <ul class="perk-list">
                 <li>Share the game with friends</li>
@@ -87,16 +91,16 @@
           We want to give a huge thanks to all our supporters who make Wacky Warlords possible!
         </p>
         <div class="supporter-tiers">
-          <div class="tier">
-            <h4>Legendary Warlords ($50+/month)</h4>
+          <div class="tier legendary">
+            <h4>💀 Legendary Warlords ($50+/month)</h4>
             <p class="tier-description">Names will be added here as supporters join...</p>
           </div>
-          <div class="tier">
-            <h4>Epic Warriors ($25+/month)</h4>
+          <div class="tier epic">
+            <h4>⚔️ Epic Warriors ($25+/month)</h4>
             <p class="tier-description">Names will be added here as supporters join...</p>
           </div>
-          <div class="tier">
-            <h4>Brave Fighters ($10+/month)</h4>
+          <div class="tier brave">
+            <h4>🛡️ Brave Fighters ($10+/month)</h4>
             <p class="tier-description">Names will be added here as supporters join...</p>
           </div>
         </div>
@@ -220,18 +224,30 @@
           <div class="expense-breakdown">
             <div class="expense-item">
               <span class="expense-label">Development Tools & Software</span>
+              <div class="expense-bar">
+                <div class="expense-fill" style="width: 40%"></div>
+              </div>
               <span class="expense-percent">40%</span>
             </div>
             <div class="expense-item">
               <span class="expense-label">Server Hosting & Infrastructure</span>
+              <div class="expense-bar">
+                <div class="expense-fill" style="width: 30%"></div>
+              </div>
               <span class="expense-percent">30%</span>
             </div>
             <div class="expense-item">
               <span class="expense-label">Art & Audio Assets</span>
+              <div class="expense-bar">
+                <div class="expense-fill" style="width: 20%"></div>
+              </div>
               <span class="expense-percent">20%</span>
             </div>
             <div class="expense-item">
               <span class="expense-label">Marketing & Community</span>
+              <div class="expense-bar">
+                <div class="expense-fill" style="width: 10%"></div>
+              </div>
               <span class="expense-percent">10%</span>
             </div>
           </div>
@@ -250,118 +266,178 @@ const shareGame = () => {
 
 const makeDonation = (amount) => {
   // Donation functionality will be implemented later
-  console.log(`Donation of $${amount} - integration coming soon!`)
+  console.log(`Donation of ${amount} - integration coming soon!`)
 }
 </script>
 
 <style scoped>
+:root {
+  --death-black: #0a0a0a;
+  --dark-stone: #1a1a1a;
+  --ancient-brown: #2d1f17;
+  --mystic-green: #4CAF50;
+  --death-green: #2e7d32;
+  --bone-white: #f5f5dc;
+  --orange-glow: #D2691E;
+  --shadow-gray: #2c2c2c;
+}
+
 .container {
   max-width: 1200px;
+  min-width: 120vh;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .page-header {
   text-align: center;
-  padding: 3rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 12px;
-  margin-bottom: 3rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+  color: var(--bone-white);
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 2px solid var(--mystic-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+  radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.header-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px var(--orange-glow));
 }
 
 .page-header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--orange-glow);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  position: relative;
+  z-index: 1;
 }
 
 .page-subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
+  color: var(--bone-white);
 }
 
 .why-support {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--shadow-gray);
 }
 
 .why-support h2 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.why-content p {
+  color: var(--bone-white);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .support-benefits {
   list-style: none;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .support-benefits li {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+  padding: 1rem 0;
+  padding-left: 2rem;
   position: relative;
-  color: #555;
+  color: var(--bone-white);
+  font-size: 1rem;
+  border-bottom: 1px solid var(--shadow-gray);
 }
 
 .support-benefits li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #27ae60;
+  color: var(--mystic-green);
   font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.support-benefits li:last-child {
+  border-bottom: none;
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 2rem;
+  color: var(--orange-glow);
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .support-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .support-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  border: 1px solid var(--shadow-gray);
 }
 
 .support-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.2);
 }
 
 .support-card.primary {
-  border: 2px solid #3498db;
+  border: 2px solid var(--mystic-green);
   position: relative;
 }
 
 .card-header {
   padding: 1.5rem;
-  background-color: #f8f9fa;
+  background: rgba(76, 175, 80, 0.1);
   position: relative;
+  border-bottom: 1px solid var(--shadow-gray);
 }
 
 .card-header h3 {
   margin: 0;
-  color: #2c3e50;
+  color: var(--orange-glow);
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .support-badge {
   position: absolute;
   top: -10px;
   right: 1rem;
-  background: #e74c3c;
-  color: white;
+  background: var(--mystic-green);
+  color: var(--death-black);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -369,7 +445,18 @@ const makeDonation = (amount) => {
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.card-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  color: var(--bone-white);
+  margin-bottom: 1rem;
 }
 
 .perk-list {
@@ -379,26 +466,28 @@ const makeDonation = (amount) => {
 }
 
 .perk-list li {
-  padding: 0.3rem 0;
-  padding-left: 1rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
   position: relative;
-  color: #555;
+  color: var(--bone-white);
   font-size: 0.9rem;
+  opacity: 0.9;
 }
 
 .perk-list li::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: var(--mystic-green);
+  font-size: 1.2rem;
 }
 
 .support-amount {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2c3e50;
+  color: var(--orange-glow);
   text-align: center;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .donation-options {
@@ -410,26 +499,27 @@ const makeDonation = (amount) => {
 
 .donation-btn {
   flex: 1;
-  padding: 0.5rem;
-  border: 2px solid #3498db;
-  background: white;
-  color: #3498db;
-  border-radius: 4px;
+  padding: 0.7rem;
+  border: 2px solid var(--mystic-green);
+  background: transparent;
+  color: var(--mystic-green);
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 60px;
+  font-weight: 600;
 }
 
 .donation-btn:hover {
-  background: #3498db;
-  color: white;
+  background: var(--mystic-green);
+  color: var(--death-black);
 }
 
 .btn {
   width: 100%;
   padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
+  border: 2px solid transparent;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -437,111 +527,242 @@ const makeDonation = (amount) => {
 }
 
 .btn-primary {
-  background-color: #3498db;
-  color: white;
+  background-color: var(--mystic-green);
+  color: var(--death-black);
+  border-color: var(--mystic-green);
 }
 
 .btn-primary:hover {
-  background-color: #2980b9;
+  background-color: var(--death-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
 .btn-secondary {
-  background-color: #27ae60;
-  color: white;
+  background-color: var(--orange-glow);
+  color: var(--death-black);
+  border-color: var(--orange-glow);
 }
 
 .btn-secondary:hover {
-  background-color: #219a52;
+  background-color: transparent;
+  color: var(--orange-glow);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: #3498db;
-  border: 2px solid #3498db;
+  color: var(--mystic-green);
+  border-color: var(--mystic-green);
 }
 
 .btn-outline:hover {
-  background-color: #3498db;
-  color: white;
+  background-color: var(--mystic-green);
+  color: var(--death-black);
 }
 
 .supporter-recognition {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
   text-align: center;
+  border: 1px solid var(--shadow-gray);
 }
 
 .recognition-text {
-  color: #555;
+  color: var(--bone-white);
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
 .supporter-tiers {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .tier {
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border-left: 4px solid #3498db;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--mystic-green);
+}
+
+.tier.legendary {
+  background: rgba(210, 105, 30, 0.1);
+  border-left-color: var(--orange-glow);
+}
+
+.tier.epic {
+  background: rgba(76, 175, 80, 0.1);
+  border-left-color: var(--mystic-green);
+}
+
+.tier.brave {
+  background: rgba(44, 44, 44, 0.3);
+  border-left-color: var(--shadow-gray);
 }
 
 .tier h4 {
   margin: 0 0 0.5rem 0;
-  color: #2c3e50;
+  color: var(--orange-glow);
+  font-size: 1.2rem;
 }
 
 .tier-description {
   margin: 0;
-  color: #7f8c8d;
+  color: var(--bone-white);
   font-style: italic;
+  opacity: 0.8;
+}
+
+.roadmap-section {
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 2px solid var(--mystic-green);
+}
+
+.roadmap-intro {
+  text-align: center;
+  color: var(--bone-white);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.roadmap-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+.timeline-item.featured {
+  border: 2px solid var(--orange-glow);
+  background: rgba(210, 105, 30, 0.1);
+}
+
+.timeline-date {
+  color: var(--orange-glow);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  color: var(--bone-white);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.timeline-content p {
+  color: var(--bone-white);
+  opacity: 0.9;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.roadmap-note {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.roadmap-note p {
+  color: var(--bone-white);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.roadmap-note strong {
+  color: var(--orange-glow);
 }
 
 .transparency {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--shadow-gray);
 }
 
 .transparency-content p {
-  color: #555;
-  margin-bottom: 1.5rem;
+  color: var(--bone-white);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .expense-breakdown {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .expense-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
   border-radius: 8px;
 }
 
 .expense-label {
-  color: #2c3e50;
+  color: var(--bone-white);
   font-weight: 500;
+  min-width: 200px;
+  font-size: 0.9rem;
+}
+
+.expense-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--shadow-gray);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.expense-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--mystic-green), var(--orange-glow));
+  border-radius: 4px;
+  transition: width 0.5s ease;
 }
 
 .expense-percent {
-  color: #3498db;
+  color: var(--orange-glow);
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  min-width: 40px;
+  text-align: right;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .support-grid {
     grid-template-columns: 1fr;
@@ -558,7 +779,69 @@ const makeDonation = (amount) => {
   .expense-item {
     flex-direction: column;
     text-align: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
+  }
+
+  .expense-label {
+    min-width: auto;
+  }
+
+  .expense-bar {
+    width: 100%;
+  }
+
+  .supporter-tiers {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .page-header {
+    padding: 2rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .why-support,
+  .supporter-recognition,
+  .roadmap-section,
+  .transparency {
+    padding: 2rem 1rem;
+  }
+
+  .support-card .card-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .donation-options {
+    gap: 0.3rem;
+  }
+
+  .donation-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .support-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 </style>

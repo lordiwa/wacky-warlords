@@ -640,7 +640,7 @@ onUnmounted(() => {
 .section-header p {
   font-size: 1.2rem;
   color: #7f8c8d;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1134,7 +1134,7 @@ onUnmounted(() => {
   color: white;
   padding: 3rem 2rem;
   border-radius: 16px;
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -1471,7 +1471,7 @@ onUnmounted(() => {
   font-size: 1.3rem;
   margin-bottom: 3rem;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }

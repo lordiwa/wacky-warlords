@@ -3,6 +3,7 @@
     <div class="container">
       <!-- Page Header -->
       <header class="page-header">
+        <div class="header-icon">📧</div>
         <h1>Contact Us & About Us</h1>
         <p class="page-subtitle">Meet the team behind Wacky Warlords and get in touch</p>
       </header>
@@ -38,6 +39,7 @@
 
             <div class="team-photo">
               <div class="placeholder-image">
+                <img src="https://place-hold.it/400x300/1a1a1a/4CAF50/png?text=Team+Photo" alt="Team Photo" />
                 <div class="placeholder-icon">📸</div>
                 <p>Team Photo Coming Soon</p>
               </div>
@@ -52,6 +54,7 @@
         <div class="team-grid">
           <div class="team-member">
             <div class="member-photo">
+              <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=GD" alt="Game Director" />
               <div class="placeholder-avatar">
                 <span>👨‍💻</span>
               </div>
@@ -68,6 +71,7 @@
 
           <div class="team-member">
             <div class="member-photo">
+              <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AD" alt="Art Director" />
               <div class="placeholder-avatar">
                 <span>🎨</span>
               </div>
@@ -84,6 +88,7 @@
 
           <div class="team-member">
             <div class="member-photo">
+              <img src="https://place-hold.it/150x150/1a1a1a/D2691E/png?text=TL" alt="Technical Lead" />
               <div class="placeholder-avatar">
                 <span>🔧</span>
               </div>
@@ -100,6 +105,7 @@
 
           <div class="team-member">
             <div class="member-photo">
+              <img src="https://place-hold.it/150x150/1a1a1a/4CAF50/png?text=AUD" alt="Audio Designer" />
               <div class="placeholder-avatar">
                 <span>🎵</span>
               </div>
@@ -270,6 +276,7 @@
 
           <div class="studio-map">
             <div class="placeholder-map">
+              <img src="https://place-hold.it/350x250/1a1a1a/4CAF50/png?text=Global+Team" alt="Global Remote Team" />
               <div class="map-icon">🌍</div>
               <p><strong>Global Remote Team</strong></p>
               <p>Developers from around the world</p>
@@ -360,64 +367,111 @@ const toggleFaq = (index) => {
 </script>
 
 <style scoped>
+:root {
+  --death-black: #0a0a0a;
+  --dark-stone: #1a1a1a;
+  --ancient-brown: #2d1f17;
+  --mystic-green: #4CAF50;
+  --death-green: #2e7d32;
+  --bone-white: #f5f5dc;
+  --orange-glow: #D2691E;
+  --shadow-gray: #2c2c2c;
+}
+
 .container {
   max-width: 1200px;
+  min-width:  120vh;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .page-header {
   text-align: center;
-  padding: 3rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 12px;
-  margin-bottom: 3rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+  color: var(--bone-white);
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 2px solid var(--mystic-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+  radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.header-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px var(--orange-glow));
 }
 
 .page-header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--orange-glow);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  position: relative;
+  z-index: 1;
 }
 
 .page-subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
+  color: var(--bone-white);
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 /* About Section */
 .about-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--shadow-gray);
+}
+
+.about-section h2 {
+  color: var(--orange-glow);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
   align-items: start;
 }
 
-.about-text h2,
 .about-text h3 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
+  color: var(--orange-glow);
+  margin: 2rem 0 1rem 0;
+  font-size: 1.3rem;
 }
 
 .about-text p {
   line-height: 1.6;
-  color: #555;
+  color: var(--bone-white);
   margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 .values-list {
@@ -426,39 +480,60 @@ const toggleFaq = (index) => {
 }
 
 .values-list li {
-  padding: 0.8rem 0;
-  color: #555;
+  padding: 1rem 0;
+  color: var(--bone-white);
   line-height: 1.5;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid var(--shadow-gray);
+  opacity: 0.9;
 }
 
 .values-list li:last-child {
   border-bottom: none;
 }
 
+.values-list strong {
+  color: var(--mystic-green);
+}
+
 .placeholder-image {
-  background-color: #ecf0f1;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
+  color: var(--bone-white);
+  position: relative;
+}
+
+.placeholder-image img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
   border-radius: 8px;
-  color: #7f8c8d;
+  margin-bottom: 0.5rem;
 }
 
 .placeholder-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-image p {
+  color: var(--orange-glow);
+  font-weight: bold;
+  margin: 0;
 }
 
 /* Team Section */
 .team-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--shadow-gray);
 }
 
 .team-grid {
@@ -470,55 +545,73 @@ const toggleFaq = (index) => {
 .team-member {
   text-align: center;
   padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 12px;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
+  border-radius: 16px;
   transition: all 0.3s ease;
 }
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.2);
+}
+
+.member-photo {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.member-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid var(--mystic-green);
 }
 
 .placeholder-avatar {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(210, 105, 30, 0.8);
   border-radius: 50%;
-  background: linear-gradient(135deg, #3498db, #2980b9);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 2.5rem;
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  font-size: 1.5rem;
 }
 
 .member-info h4 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
 .member-role {
-  color: #3498db;
+  color: var(--mystic-green);
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 .member-bio {
-  color: #555;
+  color: var(--bone-white);
   font-size: 0.95rem;
   line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* Contact Section */
 .contact-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--shadow-gray);
 }
 
 .contact-grid {
@@ -528,7 +621,7 @@ const toggleFaq = (index) => {
 }
 
 .contact-methods h3 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
@@ -538,14 +631,15 @@ const toggleFaq = (index) => {
   gap: 1rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-  background: #ecf0f1;
   transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
 }
 
 .contact-icon {
@@ -553,25 +647,27 @@ const toggleFaq = (index) => {
   width: 50px;
   text-align: center;
   flex-shrink: 0;
+  filter: drop-shadow(0 0 5px var(--orange-glow));
 }
 
 .contact-details h4 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
 .contact-details p {
-  color: #555;
+  color: var(--bone-white);
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .contact-details small {
-  color: #7f8c8d;
+  color: var(--bone-white);
   font-size: 0.85rem;
   display: block;
   margin-bottom: 1rem;
+  opacity: 0.8;
 }
 
 .social-links {
@@ -585,7 +681,7 @@ const toggleFaq = (index) => {
   padding: 0.4rem 1rem;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: var(--death-black);
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: 600;
@@ -598,6 +694,7 @@ const toggleFaq = (index) => {
 
 .twitter:hover {
   background: #1991da;
+  transform: translateY(-2px);
 }
 
 .reddit {
@@ -606,6 +703,7 @@ const toggleFaq = (index) => {
 
 .reddit:hover {
   background: #e03d00;
+  transform: translateY(-2px);
 }
 
 .youtube {
@@ -614,11 +712,12 @@ const toggleFaq = (index) => {
 
 .youtube:hover {
   background: #cc0000;
+  transform: translateY(-2px);
 }
 
 .btn-discord {
   background: #7289da;
-  color: white;
+  color: var(--bone-white);
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 6px;
@@ -634,7 +733,7 @@ const toggleFaq = (index) => {
 
 /* Contact Form */
 .contact-form-container h3 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
@@ -645,7 +744,7 @@ const toggleFaq = (index) => {
 
 .form-group label {
   display: block;
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -655,7 +754,9 @@ const toggleFaq = (index) => {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #ecf0f1;
+  border: 2px solid var(--shadow-gray);
+  background: var(--death-black);
+  color: var(--bone-white);
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
@@ -666,8 +767,8 @@ const toggleFaq = (index) => {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  border-color: var(--mystic-green);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
 }
 
 .form-group textarea {
@@ -677,7 +778,7 @@ const toggleFaq = (index) => {
 
 .btn {
   padding: 12px 24px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
@@ -686,16 +787,17 @@ const toggleFaq = (index) => {
 }
 
 .btn-primary {
-  background-color: #3498db;
-  color: white;
+  background-color: var(--mystic-green);
+  color: var(--death-black);
   width: 100%;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: #2980b9;
+  background-color: var(--death-green);
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
 .btn-primary:disabled {
@@ -706,15 +808,15 @@ const toggleFaq = (index) => {
 
 /* FAQ Section */
 .faq-section {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--shadow-gray);
 }
 
 .faq-item {
-  border: 1px solid #ecf0f1;
+  border: 1px solid var(--mystic-green);
   border-radius: 8px;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -722,12 +824,12 @@ const toggleFaq = (index) => {
 }
 
 .faq-item:hover {
-  border-color: #3498db;
+  border-color: var(--orange-glow);
 }
 
 .faq-question {
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: rgba(76, 175, 80, 0.1);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -736,19 +838,19 @@ const toggleFaq = (index) => {
 }
 
 .faq-question:hover {
-  background: #e9ecef;
+  background: rgba(76, 175, 80, 0.2);
 }
 
 .faq-question h4 {
   margin: 0;
-  color: #2c3e50;
+  color: var(--bone-white);
   font-size: 1.1rem;
 }
 
 .faq-toggle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3498db;
+  color: var(--orange-glow);
   transition: transform 0.3s ease;
 }
 
@@ -758,22 +860,23 @@ const toggleFaq = (index) => {
 
 .faq-answer {
   padding: 1.5rem;
-  background: white;
-  border-top: 1px solid #ecf0f1;
+  background: var(--death-black);
+  border-top: 1px solid var(--shadow-gray);
 }
 
 .faq-answer p {
   margin: 0;
-  color: #555;
+  color: var(--bone-white);
   line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* Studio Info */
 .studio-info {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--shadow-gray);
 }
 
 .studio-grid {
@@ -784,7 +887,7 @@ const toggleFaq = (index) => {
 
 .studio-details h3,
 .studio-details h4 {
-  color: #2c3e50;
+  color: var(--orange-glow);
   margin-bottom: 0.8rem;
 }
 
@@ -798,37 +901,59 @@ const toggleFaq = (index) => {
 }
 
 .studio-details p {
-  color: #555;
+  color: var(--bone-white);
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.studio-details strong {
+  color: var(--mystic-green);
 }
 
 .placeholder-map {
-  background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid var(--mystic-green);
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: #7f8c8d;
+  color: var(--bone-white);
   text-align: center;
   padding: 2rem;
+  position: relative;
+}
+
+.placeholder-map img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .map-icon {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px var(--mystic-green));
 }
 
 .placeholder-map p {
   margin: 0.5rem 0;
+  color: var(--orange-glow);
+}
+
+.placeholder-map p:first-of-type {
+  font-weight: bold;
 }
 
 .location-dots {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  justify-content: center;
 }
 
 .dot {
@@ -887,22 +1012,31 @@ const toggleFaq = (index) => {
     padding: 2rem 1rem;
   }
 
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
   .about-section,
   .team-section,
   .contact-section,
   .faq-section,
   .studio-info {
-    padding: 1.5rem;
+    padding: 2rem 1rem;
   }
 
   .team-member {
     padding: 1.5rem;
   }
 
+  .member-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
   .placeholder-avatar {
-    width: 80px;
-    height: 80px;
-    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
   }
 
   .faq-question {
@@ -920,46 +1054,9 @@ const toggleFaq = (index) => {
   }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .about-section,
-  .team-section,
-  .contact-section,
-  .faq-section,
-  .studio-info {
-    background: #1a1a1a;
-    color: #ecf0f1;
-  }
-
-  .team-member,
-  .contact-item {
-    background: #2c2c2c;
-  }
-
-  .faq-question {
-    background: #2c2c2c;
-  }
-
-  .faq-answer {
-    background: #1a1a1a;
-  }
-}
-
-/* Print styles */
-@media print {
-  .contact-form-container,
-  .social-links,
-  .btn {
-    display: none;
-  }
-
-  .container {
-    max-width: none;
-  }
-
-  .page-header {
-    background: none;
-    color: black;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>
