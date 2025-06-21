@@ -84,3 +84,56 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Shared Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Shared Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+/* Shared Paragraph Styles */
+p {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Shared Button Styles */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--color-heading);
+  color: var(--color-background);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background: var(--color-border-hover);
+  color: var(--color-heading);
+}
+
+/* Shared Link Styles */
+a {
+  color: var(--color-heading);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-border-hover);
+  border-bottom-color: var(--color-border-hover);
+}

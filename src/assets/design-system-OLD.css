@@ -1,0 +1,629 @@
+/* ==========================================================================
+   WACKY WARLORDS - SUSTAINABLE CSS ARCHITECTURE
+   Save this as: src/assets/design-system.css
+   ========================================================================== */
+
+/* ==========================================================================
+   1. CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ========================================================================== */
+:root {
+    /* Colors */
+    --death-black: #0a0a0a;
+    --dark-stone: #1a1a1a;
+    --ancient-brown: #2d1f17;
+    --mystic-green: #4CAF50;
+    --death-green: #2e7d32;
+    --bone-white: #f5f5dc;
+    --orange-glow: #D2691E;
+    --shadow-gray: #2c2c2c;
+
+    /* Spacing Scale */
+    --space-xs: 0.5rem;    /* 8px */
+    --space-sm: 1rem;      /* 16px */
+    --space-md: 1.5rem;    /* 24px */
+    --space-lg: 2rem;      /* 32px */
+    --space-xl: 3rem;      /* 48px */
+    --space-2xl: 4rem;     /* 64px */
+    --space-3xl: 6rem;     /* 96px */
+
+    /* Typography Scale */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 1.875rem;  /* 30px */
+    --text-4xl: 2.25rem;   /* 36px */
+    --text-5xl: 3rem;      /* 48px */
+    --text-6xl: 3.75rem;   /* 60px */
+
+    /* Layout */
+    --container-max: 1200px;
+    --container-padding: var(--space-sm);
+    --section-spacing: var(--space-2xl);
+    --card-radius: 16px;
+    --element-radius: 8px;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Responsive typography adjustments */
+@media (min-width: 768px) {
+    :root {
+        --container-padding: var(--space-md);
+        --section-spacing: var(--space-3xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --container-padding: var(--space-lg);
+    }
+}
+
+/* ==========================================================================
+   2. RESET & BASE STYLES
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   3. LAYOUT COMPONENTS
+   ========================================================================== */
+
+/* Container System - FIXES THE WIDTH ISSUES */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+.container--narrow {
+    max-width: 800px;
+}
+
+.container--wide {
+    max-width: 1400px;
+}
+
+/* Section System */
+.section {
+    width: 100%;
+    padding-top: var(--section-spacing);
+    padding-bottom: var(--section-spacing);
+}
+
+.section--compact {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.section--hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+}
+
+/* Page Wrapper */
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--death-black);
+    color: var(--bone-white);
+}
+
+/* ==========================================================================
+   4. GRID SYSTEM
+   ========================================================================== */
+.grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.grid--sm {
+    gap: var(--space-sm);
+}
+
+.grid--md {
+    gap: var(--space-md);
+}
+
+.grid--lg {
+    gap: var(--space-lg);
+}
+
+.grid--xl {
+    gap: var(--space-xl);
+}
+
+/* Responsive Grid Columns */
+.grid--1 { grid-template-columns: 1fr; }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Auto-fit grids - GREAT FOR CARDS */
+.grid--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid--auto-fit-sm {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid--auto-fit-lg {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/* Content grids */
+.grid--content {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+/* Responsive behavior - MOBILE FIRST */
+@media (max-width: 768px) {
+    .grid--2,
+    .grid--3,
+    .grid--4,
+    .grid--content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid--3,
+    .grid--4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+   5. TYPOGRAPHY SYSTEM
+   ========================================================================== */
+.text--xs { font-size: var(--text-xs); }
+.text--sm { font-size: var(--text-sm); }
+.text--base { font-size: var(--text-base); }
+.text--lg { font-size: var(--text-lg); }
+.text--xl { font-size: var(--text-xl); }
+.text--2xl { font-size: var(--text-2xl); }
+.text--3xl { font-size: var(--text-3xl); }
+.text--4xl { font-size: var(--text-4xl); }
+.text--5xl { font-size: var(--text-5xl); }
+.text--6xl { font-size: var(--text-6xl); }
+
+/* Responsive headings */
+.heading--hero {
+    font-size: clamp(var(--text-4xl), 8vw, var(--text-6xl));
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.heading--section {
+    font-size: clamp(var(--text-3xl), 6vw, var(--text-5xl));
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.heading--card {
+    font-size: clamp(var(--text-xl), 4vw, var(--text-2xl));
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Text utilities */
+.text--center { text-align: center; }
+.text--left { text-align: left; }
+.text--right { text-align: right; }
+
+.text--primary { color: var(--orange-glow); }
+.text--secondary { color: var(--mystic-green); }
+.text--muted { opacity: 0.8; }
+
+/* ==========================================================================
+   6. COMPONENT PATTERNS
+   ========================================================================== */
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+    border: 1px solid var(--shadow-gray);
+    border-radius: var(--card-radius);
+    padding: var(--space-lg);
+    transition: transform var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card--highlight {
+    border-color: var(--mystic-green);
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.card--feature {
+    border-color: var(--mystic-green);
+    background: rgba(76, 175, 80, 0.1);
+    transition: all var(--transition-base);
+}
+
+.card--feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-lg);
+    border: 2px solid transparent;
+    border-radius: var(--element-radius);
+    font-weight: 600;
+    font-size: var(--text-base);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    min-height: 44px; /* Accessibility - touch target */
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--primary {
+    background: var(--mystic-green);
+    color: var(--death-black);
+    border-color: var(--mystic-green);
+}
+
+.btn--primary:hover {
+    background: var(--death-green);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.btn--secondary {
+    background: transparent;
+    color: var(--orange-glow);
+    border-color: var(--orange-glow);
+}
+
+.btn--secondary:hover {
+    background: var(--orange-glow);
+    color: var(--death-black);
+    transform: translateY(-2px);
+}
+
+.btn--large {
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--text-lg);
+}
+
+.btn--small {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-sm);
+}
+
+.btn--full {
+    width: 100%;
+}
+
+/* Hero Components */
+.hero {
+    text-align: center;
+    padding: var(--space-2xl) var(--space-lg);
+    background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
+    border-radius: var(--card-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__icon {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-md);
+    filter: drop-shadow(0 0 20px var(--orange-glow));
+}
+
+.hero__actions {
+    display: flex;
+    gap: var(--space-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-xl);
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.section-header__icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+    filter: drop-shadow(0 0 10px var(--mystic-green));
+}
+
+.section-header__title {
+    color: var(--orange-glow);
+    margin-bottom: var(--space-md);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.section-header__description {
+    color: var(--bone-white);
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   7. UTILITY CLASSES
+   ========================================================================== */
+
+/* Spacing */
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
+
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.mb-2xl { margin-bottom: var(--space-2xl); }
+
+/* Flexbox */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+
+/* Responsive utilities */
+@media (max-width: 480px) {
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero__actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn {
+        min-width: 180px;
+    }
+}
+
+/* ==========================================================================
+   8. ACCESSIBILITY & PERFORMANCE
+   ========================================================================== */
+
+/* Focus styles */
+.btn:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid var(--mystic-green);
+    outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast */
+@media (prefers-contrast: high) {
+    .card,
+    .btn {
+        border-width: 3px;
+    }
+}
+
+.container,
+.hero-container,
+.nav-container,
+.footer-container,
+.page-container {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Override ALL page wrapper constraints */
+.page,
+.home,
+.support-page,
+.lore-page,
+.contact-about-page,
+.what-is-page {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Override ALL section constraints */
+.section,
+.hero-section,
+.parallax-hero,
+.ancient-game,
+.realm-section,
+.tournament-section,
+.warriors-section,
+.death-section,
+.sport-section,
+.wacky-section,
+.evolution-section,
+.game-loop-section,
+.strategy-section,
+.features-section,
+.pvp-section,
+.cta-section {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+/* Specific fix for What is Wacky Warlords page */
+.what-is-page .hero-section {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.what-is-page .container,
+.what-is-page .hero-container {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Specific fix for Lore page */
+.lore-page .hero-section {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.lore-page .container,
+.lore-page .hero-container {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Specific fix for Support page */
+.support-page .container {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Specific fix for Contact page */
+.contact-about-page .container {
+    min-width: unset !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 1rem !important;
+}
+
+/* Override any remaining width constraints */
+* {
+    box-sizing: border-box !important;
+}
+
+/* Ensure no horizontal overflow */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container,
+    .hero-container {
+        padding: 0 1rem !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container,
+    .hero-container {
+        padding: 0 1.5rem !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container,
+    .hero-container {
+        padding: 0 2rem !important;
+        max-width: 1200px !important;
+    }
+}
