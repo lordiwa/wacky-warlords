@@ -11,7 +11,7 @@
       </div>
     </section>
 
-    <!-- About Section - Full Width -->
+    <!-- About Section -->
     <section class="about-section-wrapper">
       <div class="container">
         <div class="about-section">
@@ -55,7 +55,7 @@
       </div>
     </section>
 
-    <!-- Team Members Section - Full Width -->
+    <!-- Team Members Section -->
     <section class="team-section-wrapper">
       <div class="container">
         <div class="team-section">
@@ -133,7 +133,7 @@
       </div>
     </section>
 
-    <!-- Contact Section - Full Width -->
+    <!-- Contact Section -->
     <section class="contact-section-wrapper">
       <div class="container">
         <div class="contact-section">
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-    <!-- FAQ Section - Full Width -->
+    <!-- FAQ Section -->
     <section class="faq-section-wrapper">
       <div class="container">
         <div class="faq-section">
@@ -265,7 +265,7 @@
       </div>
     </section>
 
-    <!-- Office/Studio Info - Full Width -->
+    <!-- Office/Studio Info -->
     <section class="studio-info-wrapper">
       <div class="container">
         <div class="studio-info">
@@ -389,15 +389,19 @@ const toggleFaq = (index) => {
 </script>
 
 <style scoped>
-:root {
-  --death-black: #0a0a0a;
-  --dark-stone: #1a1a1a;
-  --ancient-brown: #2d1f17;
-  --mystic-green: #4CAF50;
-  --death-green: #2e7d32;
-  --bone-white: #f5f5dc;
-  --orange-glow: #D2691E;
-  --shadow-gray: #2c2c2c;
+/* COMPLETELY CLEAN SYNTHWAVE STYLES - NO LEFTOVERS */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-about-page {
+  background: #0a0a0a;
+  color: white;
+  min-height: 100vh;
 }
 
 .container {
@@ -406,16 +410,30 @@ const toggleFaq = (index) => {
   padding: 0 1rem;
 }
 
+/* Page Header */
+.page-header-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 25%, #1a1a1a 50%, #2c2c2c 75%, #1a1a1a 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  padding: 4rem 0;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 .page-header {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
-  color: var(--bone-white);
+  background: rgba(255,255,255,0.1);
+  color: white;
   border-radius: 16px;
   margin-bottom: 4rem;
-  border: 2px solid var(--mystic-green);
+  border: 2px solid rgba(255,255,255,0.3);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(15px);
 }
 
 .page-header::before {
@@ -425,51 +443,86 @@ const toggleFaq = (index) => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
-  radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 30%, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+  radial-gradient(circle at 70% 70%, rgba(231, 76, 60, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
 .header-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px var(--orange-glow));
+  filter: drop-shadow(0 0 10px #f39c12);
 }
 
 .page-header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--orange-glow);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  background: linear-gradient(45deg, #e74c3c, #f39c12, #e74c3c);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
   position: relative;
   z-index: 1;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
 }
 
 .page-subtitle {
   font-size: 1.2rem;
   opacity: 0.9;
-  color: var(--bone-white);
+  color: white;
+}
+
+/* Section Styling */
+.about-section-wrapper {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  padding: 4rem 0;
+}
+
+.team-section-wrapper {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  padding: 4rem 0;
+}
+
+.contact-section-wrapper {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  padding: 4rem 0;
+}
+
+.faq-section-wrapper {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  padding: 4rem 0;
+}
+
+.studio-info-wrapper {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  padding: 4rem 0;
 }
 
 .section-title {
   text-align: center;
   font-size: 2rem;
-  color: var(--orange-glow);
+  color: white;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 /* About Section */
 .about-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem 2rem;
   border-radius: 16px;
   margin-bottom: 4rem;
-  border: 1px solid var(--shadow-gray);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
 }
 
 .about-section h2 {
-  color: var(--orange-glow);
+  color: #f39c12;
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -483,14 +536,14 @@ const toggleFaq = (index) => {
 }
 
 .about-text h3 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin: 2rem 0 1rem 0;
   font-size: 1.3rem;
 }
 
 .about-text p {
   line-height: 1.6;
-  color: var(--bone-white);
+  color: white;
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
@@ -502,9 +555,9 @@ const toggleFaq = (index) => {
 
 .values-list li {
   padding: 1rem 0;
-  color: var(--bone-white);
+  color: white;
   line-height: 1.5;
-  border-bottom: 1px solid var(--shadow-gray);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   opacity: 0.9;
 }
 
@@ -513,20 +566,21 @@ const toggleFaq = (index) => {
 }
 
 .values-list strong {
-  color: var(--mystic-green);
+  color: #3498db;
 }
 
 .placeholder-image {
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: var(--bone-white);
+  color: white;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .placeholder-image img {
@@ -543,18 +597,19 @@ const toggleFaq = (index) => {
 }
 
 .placeholder-image p {
-  color: var(--orange-glow);
+  color: #f39c12;
   font-weight: bold;
   margin: 0;
 }
 
 /* Team Section */
 .team-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem 2rem;
   border-radius: 16px;
   margin-bottom: 4rem;
-  border: 1px solid var(--shadow-gray);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
 }
 
 .team-grid {
@@ -566,15 +621,16 @@ const toggleFaq = (index) => {
 .team-member {
   text-align: center;
   padding: 2rem;
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 16px;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .member-photo {
@@ -588,7 +644,7 @@ const toggleFaq = (index) => {
   border-radius: 50%;
   margin: 0 auto;
   display: block;
-  border: 3px solid var(--mystic-green);
+  border: 3px solid rgba(255,255,255,0.3);
 }
 
 .placeholder-avatar {
@@ -598,7 +654,7 @@ const toggleFaq = (index) => {
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
-  background: rgba(210, 105, 30, 0.8);
+  background: rgba(243, 156, 18, 0.8);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -607,20 +663,20 @@ const toggleFaq = (index) => {
 }
 
 .member-info h4 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
 }
 
 .member-role {
-  color: var(--mystic-green);
+  color: #3498db;
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 .member-bio {
-  color: var(--bone-white);
+  color: white;
   font-size: 0.95rem;
   line-height: 1.6;
   opacity: 0.9;
@@ -628,11 +684,12 @@ const toggleFaq = (index) => {
 
 /* Contact Section */
 .contact-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem 2rem;
   border-radius: 16px;
   margin-bottom: 4rem;
-  border: 1px solid var(--shadow-gray);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
 }
 
 .contact-grid {
@@ -642,7 +699,7 @@ const toggleFaq = (index) => {
 }
 
 .contact-methods h3 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
@@ -652,15 +709,16 @@ const toggleFaq = (index) => {
   gap: 1rem;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 12px;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .contact-item:hover {
   transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .contact-icon {
@@ -668,23 +726,23 @@ const toggleFaq = (index) => {
   width: 50px;
   text-align: center;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 5px var(--orange-glow));
+  filter: drop-shadow(0 0 5px #f39c12);
 }
 
 .contact-details h4 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
 .contact-details p {
-  color: var(--bone-white);
+  color: white;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .contact-details small {
-  color: var(--bone-white);
+  color: white;
   font-size: 0.85rem;
   display: block;
   margin-bottom: 1rem;
@@ -702,7 +760,7 @@ const toggleFaq = (index) => {
   padding: 0.4rem 1rem;
   border: none;
   border-radius: 6px;
-  color: var(--death-black);
+  color: white;
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: 600;
@@ -738,7 +796,7 @@ const toggleFaq = (index) => {
 
 .btn-discord {
   background: #7289da;
-  color: var(--bone-white);
+  color: white;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 6px;
@@ -754,7 +812,7 @@ const toggleFaq = (index) => {
 
 /* Contact Form */
 .contact-form-container h3 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
@@ -765,7 +823,7 @@ const toggleFaq = (index) => {
 
 .form-group label {
   display: block;
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -775,21 +833,22 @@ const toggleFaq = (index) => {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid var(--shadow-gray);
-  background: var(--death-black);
-  color: var(--bone-white);
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: white;
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
   font-family: inherit;
+  backdrop-filter: blur(10px);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--mystic-green);
-  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .form-group textarea {
@@ -805,20 +864,36 @@ const toggleFaq = (index) => {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn-primary {
-  background-color: var(--mystic-green);
-  color: var(--death-black);
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
   width: 100%;
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--death-green);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
 }
 
 .btn-primary:disabled {
@@ -829,28 +904,30 @@ const toggleFaq = (index) => {
 
 /* FAQ Section */
 .faq-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem 2rem;
   border-radius: 16px;
   margin-bottom: 4rem;
-  border: 1px solid var(--shadow-gray);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
 }
 
 .faq-item {
-  border: 1px solid var(--mystic-green);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 8px;
   margin-bottom: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .faq-item:hover {
-  border-color: var(--orange-glow);
+  border-color: rgba(255,255,255,0.5);
 }
 
 .faq-question {
   padding: 1.5rem;
-  background: rgba(76, 175, 80, 0.1);
+  background: rgba(255,255,255,0.1);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -859,19 +936,19 @@ const toggleFaq = (index) => {
 }
 
 .faq-question:hover {
-  background: rgba(76, 175, 80, 0.2);
+  background: rgba(255,255,255,0.15);
 }
 
 .faq-question h4 {
   margin: 0;
-  color: var(--bone-white);
+  color: white;
   font-size: 1.1rem;
 }
 
 .faq-toggle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--orange-glow);
+  color: #f39c12;
   transition: transform 0.3s ease;
 }
 
@@ -881,23 +958,24 @@ const toggleFaq = (index) => {
 
 .faq-answer {
   padding: 1.5rem;
-  background: var(--death-black);
-  border-top: 1px solid var(--shadow-gray);
+  background: rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 .faq-answer p {
   margin: 0;
-  color: var(--bone-white);
+  color: white;
   line-height: 1.6;
   opacity: 0.9;
 }
 
 /* Studio Info */
 .studio-info {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem 2rem;
   border-radius: 16px;
-  border: 1px solid var(--shadow-gray);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
 }
 
 .studio-grid {
@@ -908,7 +986,7 @@ const toggleFaq = (index) => {
 
 .studio-details h3,
 .studio-details h4 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 0.8rem;
 }
 
@@ -922,29 +1000,30 @@ const toggleFaq = (index) => {
 }
 
 .studio-details p {
-  color: var(--bone-white);
+  color: white;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   opacity: 0.9;
 }
 
 .studio-details strong {
-  color: var(--mystic-green);
+  color: #3498db;
 }
 
 .placeholder-map {
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  color: var(--bone-white);
+  color: white;
   text-align: center;
   padding: 2rem;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .placeholder-map img {
@@ -958,12 +1037,12 @@ const toggleFaq = (index) => {
 .map-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px var(--mystic-green));
+  filter: drop-shadow(0 0 10px #3498db);
 }
 
 .placeholder-map p {
   margin: 0.5rem 0;
-  color: var(--orange-glow);
+  color: #f39c12;
 }
 
 .placeholder-map p:first-of-type {

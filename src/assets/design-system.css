@@ -72,9 +72,6 @@
    2. 80s TYPOGRAPHY SYSTEM
    ========================================================================== */
 
-/* Import 80s-style fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Electrolize:wght@400&family=Audiowide:wght@400&display=swap');
-
 body {
     font-family: 'Electrolize', 'Courier New', monospace;
     background: var(--void-black);

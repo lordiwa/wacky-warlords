@@ -27,7 +27,7 @@
       </div>
     </section>
 
-    <!-- Game Loop Section - Full Width -->
+    <!-- Game Loop Section -->
     <section class="section game-loop-section">
       <div class="container">
         <div class="section-header">
@@ -65,7 +65,7 @@
       </div>
     </section>
 
-    <!-- Strategy Section - Full Width -->
+    <!-- Strategy Section -->
     <section class="section strategy-section">
       <div class="container">
         <div class="content-grid">
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <!-- Features Grid - Full Width -->
+    <!-- Features Grid -->
     <section class="section features-section">
       <div class="container">
         <div class="section-header">
@@ -160,7 +160,7 @@
       </div>
     </section>
 
-    <!-- PvP Section - Full Width -->
+    <!-- PvP Section -->
     <section class="section pvp-section">
       <div class="container">
         <div class="section-header">
@@ -200,7 +200,7 @@
       </div>
     </section>
 
-    <!-- Why Wacky Section - Full Width -->
+    <!-- Why Wacky Section -->
     <section class="section wacky-section">
       <div class="container">
         <div class="section-header">
@@ -232,7 +232,7 @@
       </div>
     </section>
 
-    <!-- Evolution Section - Full Width -->
+    <!-- Evolution Section -->
     <section class="section evolution-section">
       <div class="container">
         <div class="section-header">
@@ -265,7 +265,7 @@
       </div>
     </section>
 
-    <!-- Call to Action - Full Width -->
+    <!-- Call to Action -->
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
@@ -291,49 +291,38 @@
 </script>
 
 <style scoped>
-:root {
-  --death-black: #0a0a0a;
-  --dark-stone: #1a1a1a;
-  --ancient-brown: #2d1f17;
-  --mystic-green: #4CAF50;
-  --death-green: #2e7d32;
-  --bone-white: #f5f5dc;
-  --orange-glow: #D2691E;
-  --shadow-gray: #2c2c2c;
-  --card-radius: 24px;
-  --section-spacing: 4rem;
-}
+/* COMPLETELY CLEAN SYNTHWAVE STYLES - NO LEFTOVERS */
 
+/* Reset */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .what-is-page {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background: var(--death-black);
-  color: var(--bone-white);
+  background: #0a0a0a;
+  color: white;
   min-height: 100vh;
 }
 
-.section {
-  width: 100%;
-  padding: var(--section-spacing) 0;
-  margin: 0;
-}
-
-/* Hero Section - Full Width like Home */
+/* Hero Section - Synthwave Style */
 .hero-section {
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 25%, #1a1a1a 50%, #2c2c2c 75%, #1a1a1a 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .hero-section::before {
@@ -343,53 +332,61 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(76, 175, 80, 0.1) 0%, transparent 50%),
-  radial-gradient(circle at 70% 70%, rgba(210, 105, 30, 0.1) 0%, transparent 50%);
-  pointer-events: none;
+  background: radial-gradient(circle at 20% 20%, rgba(231, 76, 60, 0.1) 0%, transparent 40%),
+  radial-gradient(circle at 80% 80%, rgba(142, 68, 173, 0.1) 0%, transparent 40%),
+  radial-gradient(circle at 40% 60%, rgba(52, 152, 219, 0.1) 0%, transparent 40%);
 }
 
 .hero-container {
-  text-align: center;
-  max-width: 900px;
-  padding: 0 2rem;
   position: relative;
   z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  padding: 0 2rem;
 }
 
 .hero-icon {
   font-size: 4rem;
-  margin-bottom: 2rem;
-  filter: drop-shadow(0 0 20px var(--mystic-green));
-  animation: float 3s ease-in-out infinite;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+  animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 5rem);
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: bold;
   margin-bottom: 1rem;
-  color: var(--orange-glow);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  background: linear-gradient(45deg, #e74c3c, #f39c12, #e74c3c);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  font-weight: 600;
-  color: var(--mystic-green);
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  opacity: 0.9;
+  font-style: italic;
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.6;
   margin-bottom: 3rem;
-  opacity: 0.95;
+  opacity: 0.85;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -404,19 +401,19 @@
 }
 
 .tag {
-  background: rgba(76, 175, 80, 0.15);
-  border: 2px solid var(--mystic-green);
+  background: rgba(52, 152, 219, 0.2);
+  border: 2px solid #3498db;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--bone-white);
+  color: white;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .tag:hover {
-  background: rgba(76, 175, 80, 0.25);
+  background: rgba(52, 152, 219, 0.3);
   transform: translateY(-2px);
 }
 
@@ -427,36 +424,90 @@
   flex-wrap: wrap;
 }
 
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-
+/* Section Styles */
+.section {
+  width: 100%;
+  padding: 4rem 0;
+}
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  filter: drop-shadow(0 0 10px var(--mystic-green));
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .section-header h2 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  color: var(--orange-glow);
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .section-description {
   font-size: 1.2rem;
-  color: var(--bone-white);
+  color: white;
   line-height: 1.7;
   max-width: 800px;
   margin: 0 auto;
@@ -467,21 +518,20 @@
   font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: var(--bone-white);
+  color: white;
 }
 
 .highlight-text {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-top: 2rem;
 }
 
-/* Game Loop Section - Background */
+/* Game Loop Section */
 .game-loop-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
-  border-top: 1px solid var(--shadow-gray);
-  border-bottom: 1px solid var(--shadow-gray);
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: white;
 }
 
 .game-flow {
@@ -494,26 +544,26 @@
 }
 
 .flow-step {
-  background: rgba(76, 175, 80, 0.1);
-  border: 2px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #3498db;
   padding: 2.5rem 2rem;
   border-radius: 20px;
   text-align: center;
   max-width: 280px;
-  position: relative;
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .flow-step:hover {
+  background: rgba(255,255,255,0.15);
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
 }
 
 .step-number {
   width: 50px;
   height: 50px;
-  background: var(--mystic-green);
-  color: var(--death-black);
+  background: #3498db;
+  color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -521,18 +571,18 @@
   font-weight: bold;
   font-size: 1.25rem;
   margin: 0 auto 1.5rem;
-  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
 }
 
 .flow-step h3 {
-  color: var(--bone-white);
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .flow-step p {
-  color: var(--bone-white);
+  color: white;
   opacity: 0.8;
   font-size: 1rem;
   line-height: 1.5;
@@ -540,15 +590,15 @@
 
 .flow-arrow {
   font-size: 2.5rem;
-  color: var(--orange-glow);
+  color: #f39c12;
   font-weight: bold;
-  text-shadow: 0 0 10px var(--orange-glow);
+  text-shadow: 0 0 10px #f39c12;
 }
 
 .flow-conclusion {
   text-align: center;
   font-style: italic;
-  color: var(--bone-white);
+  color: white;
   font-size: 1.2rem;
   margin-top: 3rem;
   opacity: 0.9;
@@ -556,7 +606,8 @@
 
 /* Strategy Section */
 .strategy-section {
-  background: var(--death-black);
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+  color: white;
 }
 
 .content-grid {
@@ -567,10 +618,11 @@
 }
 
 .content-main {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
+  background: rgba(255,255,255,0.1);
   padding: 3rem;
-  border-radius: var(--card-radius);
-  border: 1px solid var(--shadow-gray);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .strategy-points {
@@ -583,24 +635,24 @@
   gap: 1rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  background: rgba(76, 175, 80, 0.1);
-  border-left: 4px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border-left: 4px solid #f39c12;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .point-item:hover {
   transform: translateX(10px);
-  background: rgba(76, 175, 80, 0.15);
+  background: rgba(255,255,255,0.15);
 }
 
 .point-icon {
   font-size: 1.5rem;
-  filter: drop-shadow(0 0 5px var(--orange-glow));
+  filter: drop-shadow(0 0 5px #f39c12);
 }
 
 .point-item h4 {
-  color: var(--bone-white);
+  color: white;
   font-size: 1.1rem;
   margin: 0;
 }
@@ -612,15 +664,15 @@
 
 .media-card {
   position: relative;
-  border-radius: var(--card-radius);
+  border-radius: 20px;
   overflow: hidden;
-  border: 2px solid var(--mystic-green);
+  border: 2px solid rgba(255,255,255,0.3);
   transition: all 0.3s ease;
 }
 
 .media-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .media-card img {
@@ -640,16 +692,15 @@
 }
 
 .media-overlay h4 {
-  color: var(--orange-glow);
+  color: #f39c12;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
 /* Features Section */
 .features-section {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
-  border-top: 1px solid var(--shadow-gray);
-  border-bottom: 1px solid var(--shadow-gray);
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
 }
 
 .features-grid {
@@ -660,16 +711,17 @@
 }
 
 .feature-card {
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
   border-radius: 20px;
   overflow: hidden;
+  backdrop-filter: blur(15px);
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .card-media img {
@@ -686,24 +738,25 @@
 .card-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 5px var(--orange-glow));
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
 }
 
 .card-content h3 {
-  color: var(--orange-glow);
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 .card-content p {
-  color: var(--bone-white);
+  color: white;
   line-height: 1.6;
   opacity: 0.9;
 }
 
 /* PvP Section */
 .pvp-section {
-  background: var(--death-black);
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
 }
 
 .pvp-grid {
@@ -714,34 +767,35 @@
 }
 
 .pvp-card {
-  background: linear-gradient(135deg, var(--dark-stone) 0%, var(--ancient-brown) 100%);
-  border: 2px solid var(--mystic-green);
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
   padding: 2.5rem 2rem;
   border-radius: 20px;
   text-align: center;
+  backdrop-filter: blur(15px);
   transition: all 0.3s ease;
 }
 
 .pvp-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
-  border-color: var(--orange-glow);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.5);
 }
 
 .pvp-icon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  filter: drop-shadow(0 0 10px var(--mystic-green));
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
 }
 
 .pvp-card h3 {
-  color: var(--orange-glow);
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 .pvp-card p {
-  color: var(--bone-white);
+  color: white;
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -750,23 +804,23 @@
   text-align: center;
   margin-top: 3rem;
   padding: 2rem;
-  background: rgba(76, 175, 80, 0.1);
+  background: rgba(255,255,255,0.1);
   border-radius: 16px;
-  border: 1px solid var(--mystic-green);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
 .pvp-highlight p {
   font-size: 1.2rem;
   line-height: 1.7;
-  color: var(--bone-white);
+  color: white;
   margin: 0;
 }
 
 /* Wacky Section */
 .wacky-section {
-  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
-  border-top: 2px solid var(--orange-glow);
-  border-bottom: 2px solid var(--orange-glow);
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
 }
 
 .wacky-content {
@@ -790,16 +844,17 @@
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  background: rgba(76, 175, 80, 0.1);
+  background: rgba(255,255,255,0.1);
   padding: 2rem;
   border-radius: 16px;
   font-weight: 600;
-  border: 1px solid var(--mystic-green);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
 .combo-unit {
-  background: rgba(210, 105, 30, 0.2);
-  border: 2px solid var(--orange-glow);
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.4);
   padding: 1rem 1.5rem;
   border-radius: 12px;
   font-size: 1rem;
@@ -808,12 +863,12 @@
 .combo-plus, .combo-vs {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--mystic-green);
+  color: white;
 }
 
 .combo-target {
-  background: rgba(210, 105, 30, 0.2);
-  border: 2px solid var(--orange-glow);
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.4);
   padding: 1rem 1.5rem;
   border-radius: 12px;
   font-size: 1rem;
@@ -821,7 +876,8 @@
 
 /* Evolution Section */
 .evolution-section {
-  background: var(--death-black);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
 }
 
 .evolution-grid {
@@ -836,47 +892,66 @@
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid var(--mystic-green);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 16px;
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .evolution-item:hover {
   transform: translateY(-5px);
-  background: rgba(76, 175, 80, 0.15);
+  background: rgba(255,255,255,0.15);
 }
 
 .evolution-icon {
   font-size: 2rem;
-  filter: drop-shadow(0 0 5px var(--orange-glow));
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }
 
 .evolution-item h4 {
-  color: var(--bone-white);
+  color: white;
   font-size: 1.1rem;
   margin: 0;
 }
 
 /* Call to Action */
 .cta-section {
-  background: linear-gradient(135deg, var(--death-black) 0%, var(--ancient-brown) 100%);
-  border-top: 2px solid var(--mystic-green);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(231, 76, 60, 0.1), transparent 50%),
+  radial-gradient(circle at 70% 70%, rgba(52, 152, 219, 0.1), transparent 50%);
 }
 
 .cta-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .cta-content h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 3rem;
-  font-weight: 700;
-  color: var(--orange-glow);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #e74c3c, #f39c12, #3498db);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
 }
 
 .cta-buttons {
@@ -884,98 +959,23 @@
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.25rem 2.5rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.btn:hover::before {
-  left: 100%;
-}
-
-.btn-primary {
-  background: var(--mystic-green);
-  color: var(--death-black);
-  border-color: var(--mystic-green);
-}
-
-.btn-primary:hover {
-  background: var(--death-green);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--orange-glow);
-  border-color: var(--orange-glow);
-}
-
-.btn-secondary:hover {
-  background: var(--orange-glow);
-  color: var(--death-black);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(210, 105, 30, 0.4);
-}
-
-.btn-icon {
-  font-size: 1.2rem;
+  margin-top: 3rem;
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 1.5rem;
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
   }
 
   .content-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  :root {
-    --section-spacing: 3rem;
-  }
-
-  .hero-container {
-    padding: 0 1rem;
-  }
-
-  .container {
-    padding: 0 1rem;
-  }
-
-  .section-header {
-    margin-bottom: 2.5rem;
-  }
-
-  .content-main {
-    padding: 2rem;
   }
 
   .game-flow {
@@ -1060,36 +1060,9 @@
     width: 100%;
     max-width: 300px;
   }
-}
 
-/* Reduced motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .hero-icon,
-  .flow-step,
-  .feature-card,
-  .pvp-card,
-  .evolution-item,
-  .btn {
-    animation: none;
-    transition: none;
-  }
-
-  .btn::before {
-    display: none;
-  }
-}
-
-/* High contrast mode */
-@media (prefers-contrast: more) {
-  .flow-step,
-  .feature-card,
-  .pvp-card {
-    border-width: 3px;
-  }
-
-  .tag,
-  .btn {
-    border-width: 3px;
+  .cta-content h2 {
+    font-size: 2rem;
   }
 }
 </style>

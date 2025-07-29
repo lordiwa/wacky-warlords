@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Electrolize:wght@400&family=Audiowide:wght@400&display=swap');
 @import './base.css';
 
 #app {
   font-weight: normal;
 }
+
 a,
 .green {
   text-decoration: none;
@@ -388,7 +390,7 @@ img {
 }
 
 /* High contrast improvements */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
   .support-card,
   .sport-card,
   .feature-card,
@@ -502,6 +504,7 @@ img {
 
 body {
   overflow-x: hidden;
+  font-family: 'Orbitron', 'Electrolize', 'Audiowide', sans-serif;
 }
 
 .container,
