@@ -27,50 +27,50 @@
 
     <div class="retro-container">
       <!-- Support Banner with 80s Style -->
-      <section class="support-banner neon-border">
-        <div class="banner-bg-grid"></div>
-        <div class="banner-content">
-          <div class="banner-left">
-            <div class="banner-icon text-neon">🚀</div>
-            <div class="banner-text">
-              <h2 class="retro-title">SUPPORT THE REVOLUTION</h2>
-              <p>Help us build the ultimate strategy game and join thousands of supporters shaping the future of Wacky Warlords!</p>
-              <div class="banner-features">
-                <span class="feature-tag">🎁 EXCLUSIVE PERKS</span>
-                <span class="feature-tag">⚡ EARLY ACCESS</span>
-                <span class="feature-tag">💬 DIRECT DEV CONTACT</span>
-              </div>
-            </div>
-          </div>
-          <div class="banner-right">
-            <router-link to="/support-us" class="retro-btn retro-btn--neon">
-              <span class="btn-text">SUPPORT DEVELOPMENT</span>
-              <span class="btn-arrow">→</span>
-            </router-link>
-            <div class="support-stats">
-              <div class="stat-item">
-                <span class="stat-icon text-neon">👥</span>
-                <span class="neon-text">2,847 SUPPORTERS</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-icon text-cyber">💰</span>
-                <span class="text-cyber">85% FUNDED</span>
-              </div>
-            </div>
-          </div>
-        </div>
+<!--      <section class="support-banner neon-border">-->
+<!--        <div class="banner-bg-grid"></div>-->
+<!--        <div class="banner-content">-->
+<!--          <div class="banner-left">-->
+<!--            <div class="banner-icon text-neon">🚀</div>-->
+<!--            <div class="banner-text">-->
+<!--              <h2 class="retro-title">SUPPORT THE REVOLUTION</h2>-->
+<!--              <p>Help us build the ultimate strategy game and join thousands of supporters shaping the future of Wacky Warlords!</p>-->
+<!--              <div class="banner-features">-->
+<!--                <span class="feature-tag">🎁 EXCLUSIVE PERKS</span>-->
+<!--                <span class="feature-tag">⚡ EARLY ACCESS</span>-->
+<!--                <span class="feature-tag">💬 DIRECT DEV CONTACT</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="banner-right">-->
+<!--            <router-link to="/support-us" class="retro-btn retro-btn&#45;&#45;neon">-->
+<!--              <span class="btn-text">SUPPORT DEVELOPMENT</span>-->
+<!--              <span class="btn-arrow">→</span>-->
+<!--            </router-link>-->
+<!--            <div class="support-stats">-->
+<!--              <div class="stat-item">-->
+<!--                <span class="stat-icon text-neon">👥</span>-->
+<!--                <span class="neon-text">2,847 SUPPORTERS</span>-->
+<!--              </div>-->
+<!--              <div class="stat-item">-->
+<!--                <span class="stat-icon text-cyber">💰</span>-->
+<!--                <span class="text-cyber">85% FUNDED</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <!-- Neon Progress Bar -->
-        <div class="funding-progress">
-          <div class="neon-progress-bar">
-            <div class="neon-progress-fill" style="width: 85%"></div>
-          </div>
-          <div class="progress-stats">
-            <span class="current-amount text-neon">$12,450</span>
-            <span class="goal-amount text-cyber">/ $15,000 GOAL</span>
-          </div>
-        </div>
-      </section>
+<!--        &lt;!&ndash; Neon Progress Bar &ndash;&gt;-->
+<!--        <div class="funding-progress">-->
+<!--          <div class="neon-progress-bar">-->
+<!--            <div class="neon-progress-fill" style="width: 85%"></div>-->
+<!--          </div>-->
+<!--          <div class="progress-stats">-->
+<!--            <span class="current-amount text-neon">$12,450</span>-->
+<!--            <span class="goal-amount text-cyber">/ $15,000 GOAL</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </section>-->
 
       <!-- Lore Section with 80s Style -->
       <section class="cyber-section lore-section">

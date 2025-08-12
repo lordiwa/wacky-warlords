@@ -15,9 +15,6 @@
             <router-link to="/lore" class="retro-nav__link" @click="closeMenu">Lore</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/support-us" class="retro-nav__link" @click="closeMenu">Support Us</router-link>
-          </li>
-          <li class="nav-item">
             <router-link to="/contact-about" class="retro-nav__link" @click="closeMenu">Meet Us</router-link>
           </li>
         </ul>
@@ -47,7 +44,6 @@
             <ul>
               <li><router-link to="/what-is-wacky-warlords">Game Info</router-link></li>
               <li><router-link to="/lore">Lore</router-link></li>
-              <li><router-link to="/support-us">Support</router-link></li>
             </ul>
           </div>
           <div class="footer-section">
